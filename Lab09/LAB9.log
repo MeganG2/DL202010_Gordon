@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.4.4)  4 APR 2020 14:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.4.4)  4 APR 2020 15:15
 entering extended mode
 **./LAB9.tex
 (LAB9.tex
@@ -464,65 +464,49 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 67.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 80.
+(Font)              <10.95> on input line 81.
 <register.png, id=3, 723.82922pt x 579.28922pt>
 File: register.png Graphic file (type png)
 <use register.png>
-Package pdftex.def Info: register.png  used on input line 92.
-(pdftex.def)             Requested size: 516.73338pt x 413.55222pt.
+Package pdftex.def Info: register.png  used on input line 93.
+(pdftex.def)             Requested size: 540.2154pt x 132.3362pt.
 
-Overfull \hbox (46.97836pt too wide) in paragraph at lines 92--93
+Overfull \hbox (70.46037pt too wide) in paragraph at lines 93--94
  [][] 
  []
 
-<alu.png, id=5, 760.01976pt x 608.37123pt>
+<alu.png, id=6, 760.01976pt x 608.37123pt>
 File: alu.png Graphic file (type png)
 <use alu.png>
-Package pdftex.def Info: alu.png  used on input line 110.
-(pdftex.def)             Requested size: 516.73338pt x 413.63127pt.
+Package pdftex.def Info: alu.png  used on input line 111.
+(pdftex.def)             Requested size: 540.2154pt x 139.04219pt.
 
-Overfull \hbox (46.97836pt too wide) in paragraph at lines 110--111
+Overfull \hbox (70.46037pt too wide) in paragraph at lines 111--112
  [][] 
  []
 
 [1
 
-{C:/Users/Gordoncrew/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-[2 <./register.png>] [3 <./alu.png>]
+{C:/Users/Gordoncrew/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./regi
+ster.png>] [2 <./alu.png>]
 <step1.jpg, id=27, 4047.12pt x 3035.34pt>
 File: step1.jpg Graphic file (type jpg)
 <use step1.jpg>
-Package pdftex.def Info: step1.jpg  used on input line 119.
+Package pdftex.def Info: step1.jpg  used on input line 120.
 (pdftex.def)             Requested size: 4047.11017pt x 3035.33263pt.
- [4 <./step1.jpg>]
+ [3 <./step1.jpg>]
 <step2.jpg, id=33, 4047.12pt x 3035.34pt>
 File: step2.jpg Graphic file (type jpg)
 <use step2.jpg>
-Package pdftex.def Info: step2.jpg  used on input line 126.
+Package pdftex.def Info: step2.jpg  used on input line 127.
 (pdftex.def)             Requested size: 4047.11017pt x 3035.33263pt.
-
-Overfull \hbox (46.94069pt too wide) in paragraph at lines 126--127
- [][] 
- []
-
-
-LaTeX Warning: Float too large for page by 59.23094pt on input line 129.
-
-[5 <./step2.jpg>]
+ [4 <./step2.jpg>]
 <step3.jpg, id=39, 4047.12pt x 3035.34pt>
 File: step3.jpg Graphic file (type jpg)
 <use step3.jpg>
-Package pdftex.def Info: step3.jpg  used on input line 133.
+Package pdftex.def Info: step3.jpg  used on input line 134.
 (pdftex.def)             Requested size: 4047.11017pt x 3035.33263pt.
-
-Overfull \hbox (46.94069pt too wide) in paragraph at lines 133--134
- [][] 
- []
-
-
-LaTeX Warning: Float too large for page by 59.23094pt on input line 136.
-
-[6 <./step3.jpg>]
+ [5 <./step3.jpg>]
 ("C:\Users\Gordoncrew\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstl
 ang1.sty"
 File: lstlang1.sty 2019/09/10 1.8c listings language file
@@ -536,46 +520,62 @@ ang3.sty"
 File: lstlang3.sty 2019/09/10 1.8c listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 147.
+nput line 148.
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 148.
- [7
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 149.
+ [6
 
 
 
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 248.
- [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 248.
+] [7]
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
+269.
+
+("C:\Users\Gordoncrew\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmtt.
+fd"
+File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+
+LaTeX Font Warning: Font shape `TS1/cmtt/bx/n' undefined
+(Font)              using `TS1/cmtt/m/n' instead
+(Font)              for symbol `textdollar' on input line 269.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 302.
+[8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 302.
  (LAB9.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 248.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 248.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 302.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 302.
 Package rerunfilecheck Info: File `LAB9.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8840 strings out of 480934
- 131935 string characters out of 2897578
- 703386 words of memory out of 3000000
- 24472 multiletter control sequences out of 15000+200000
- 537062 words of font info for 40 fonts, out of 3000000 for 9000
+ 8902 strings out of 480934
+ 133037 string characters out of 2897578
+ 683432 words of memory out of 3000000
+ 24477 multiletter control sequences out of 15000+200000
+ 537359 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,8n,49p,1195b,1904s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Gordoncrew/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb><C:/Users/Gordoncrew/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Gordoncrew/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Gordoncrew/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/User
-s/Gordoncrew/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mtt10.pfb>
-Output written on LAB9.pdf (8 pages, 8687992 bytes).
+ 34i,8n,49p,1195b,1920s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Gordoncrew\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dp
+i600\tctt1000.pk><C:/Users/Gordoncrew/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Gordoncrew/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Gordoncrew/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/
+Gordoncrew/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+17.pfb><C:/Users/Gordoncrew/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmtt10.pfb>
+Output written on LAB9.pdf (8 pages, 8698519 bytes).
 PDF statistics:
- 186 PDF objects out of 1000 (max. 8388607)
- 105 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 259 PDF objects out of 1000 (max. 8388607)
+ 158 named destinations out of 1000 (max. 500000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
