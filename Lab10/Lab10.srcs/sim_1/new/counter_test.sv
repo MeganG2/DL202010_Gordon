@@ -22,9 +22,9 @@ counter #(.N(4)) r(.clk(clk),
     end //clock constantly runs
     
     initial begin
-        clk=0; en=0; rst=0; #5;
+        clk=0; rst=0; en=0; #5;
         rst=1; #5; //reset
-        en=1; rst=0; #5;
+        rst=0; en=1; #5;
         en=0; #5;
         en=1; #5
         en=0; #5;
@@ -46,13 +46,6 @@ counter #(.N(4)) r(.clk(clk),
         en=0; #5;
         $finish;
     end
-    
-    
-//en=1; #3;
-        //D=4'h0; #2;
-        //en=0; #10;
-        //en=1; #2;
-        //D=4'h6; #11;
         
 endmodule
 

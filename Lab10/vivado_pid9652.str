@@ -1,0 +1,1709 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 9652
+License: Customer
+
+Current time: 	Mon Apr 13 16:27:47 CDT 2020
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1280x1024
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 640 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Gordoncrew
+User home directory: C:/Users/Gordoncrew
+User working directory: C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Users/Gordoncrew/Desktop/xilinx/Vivado
+HDI_APPROOT: C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Gordoncrew/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Gordoncrew/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Gordoncrew/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/vivado.log
+Vivado journal file location: 	C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/vivado.jou
+Engine tmp dir: 	C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/.Xil/Vivado-9652-Gordoncrew-PC
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3
+XILINX_VIVADO: C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 498 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1355 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Gordoncrew\Documents\GitHub\DL202010_Gordon\Lab10\Lab10.xpr. Version: Vivado v2018.3 
+// WARNING: HEventQueue.dispatchEvent() is taking  1952 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 1031ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1068 ms.
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 500 MB. GUI used memory: 42 MB. Current time: 4/13/20, 4:27:49 PM CDT
+// Tcl Message: open_project C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 101 MB (+102930kb) [00:01:50]
+// [Engine Memory]: 562 MB (+438155kb) [00:01:50]
+// WARNING: HEventQueue.dispatchEvent() is taking  14118 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1958 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 591 MB. GUI used memory: 46 MB. Current time: 4/13/20, 4:28:43 PM CDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:53 . Memory (MB): peak = 618.617 ; gain = 77.887 
+// Project name: Lab10; location: C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10; part: xc7a35tcpg236-1
+// [Engine Memory]: 594 MB (+3575kb) [00:02:01]
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (counter.sv) elapsed time: 1.8s
+// Elapsed time: 55 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, counter (counter.sv)]", 2, false); // B (D, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  4021 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, counter (counter.sv)]", 2, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // af (al, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1498 ms.
+// Elapsed time: 402 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, counter_test (counter_test.sv)]", 6, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, counter_test (counter_test.sv)]", 6, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // af (al, cp)
+// Elapsed time: 42 seconds
+selectCodeEditor("counter_test.sv", 121, 389); // cl (w, cp)
+selectCodeEditor("counter_test.sv", 215, 367); // cl (w, cp)
+selectCodeEditor("counter_test.sv", 160, 337); // cl (w, cp)
+selectCodeEditor("counter_test.sv", 137, 318); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("counter_test.sv", 171, 371); // cl (w, cp)
+typeControlKey((HResource) null, "counter_test.sv", 'v'); // cl (w, cp)
+selectCodeEditor("counter_test.sv", 44, 99); // cl (w, cp)
+// Elapsed time: 45 seconds
+selectCodeEditor("counter_test.sv", 128, 278); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 614 MB. GUI used memory: 49 MB. Current time: 4/13/20, 4:40:13 PM CDT
+// Elapsed time: 114 seconds
+selectCodeEditor("counter_test.sv", 60, 215); // cl (w, cp)
+// [GUI Memory]: 106 MB (+783kb) [00:14:47]
+// Elapsed time: 84 seconds
+selectCodeEditor("counter_test.sv", 90, 264); // cl (w, cp)
+selectCodeEditor("counter_test.sv", 116, 316); // cl (w, cp)
+selectCodeEditor("counter_test.sv", 74, 263); // cl (w, cp)
+selectCodeEditor("counter_test.sv", 116, 272); // cl (w, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (Q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// e (cp):  Run Simulation : addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'counter_test' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj counter_test_vlog.prj" 
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.srcs/sources_1/new/counter.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module counter 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.srcs/sim_1/new/counter_test.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module counter_test 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 638.531 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '10' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.sim/sim_1/behav/xsim' 
+// Tcl Message: Built simulation snapshot counter_test_behav 
+// Tcl Message:  ****** Webtalk v2018.3 (64-bit)   **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018   **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.  source C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.sim/sim_1/behav/xsim/xsim.dir/counter_test_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-206] Exiting Webtalk at Mon Apr 13 16:42:50 2020... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:28 . Memory (MB): peak = 638.531 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '28' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "counter_test_behav -key {Behavioral:sim_1:Functional:counter_test} -tclbatch {counter_test.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Vivado Simulator 2018.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [Engine Memory]: 636 MB (+13345kb) [00:16:14]
+// PAPropertyPanels.initPanels (counter_test.sv) elapsed time: 0.3s
+// WARNING: HEventQueue.dispatchEvent() is taking  3745 ms.
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Elapsed time: 52 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// HMemoryUtils.trashcanNow. Engine heap size: 643 MB. GUI used memory: 53 MB. Current time: 4/13/20, 4:43:00 PM CDT
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2044 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source counter_test.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 643 MB. GUI used memory: 54 MB. Current time: 4/13/20, 4:43:04 PM CDT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// Tcl Message: # run 1000ns 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: $finish called at time : 170 ns : File "C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.srcs/sim_1/new/counter_test.sv" Line 30 
+// Tcl Message: xsim: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 667.070 ; gain = 28.539 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_test_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:23 ; elapsed = 00:00:58 . Memory (MB): peak = 667.070 ; gain = 28.539 
+// 'd' command handler elapsed time: 62 seconds
+dismissDialog("Run Simulation"); // e (cp)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// [GUI Memory]: 112 MB (+228kb) [00:16:27]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 2); // k (j, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 644 MB. GUI used memory: 55 MB. Current time: 4/13/20, 4:43:15 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 644 MB. GUI used memory: 56 MB. Current time: 4/13/20, 4:43:20 PM CDT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter_test.sv", 1); // k (j, cp)
+// Elapsed time: 35 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 2); // k (j, cp)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // w
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectCodeEditor("counter_test.sv", 217, 190); // cl (w, cp)
+selectCodeEditor("counter_test.sv", 65, 186); // cl (w, cp)
+selectCodeEditor("counter_test.sv", 124, 160); // cl (w, cp)
+typeControlKey((HResource) null, "counter_test.sv", 'v'); // cl (w, cp)
+selectCodeEditor("counter_test.sv", 81, 144); // cl (w, cp)
+selectCodeEditor("counter_test.sv", 155, 437); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (Q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// bx (cp):  Close : addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton (C, I)
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// WARNING: HEventQueue.dispatchEvent() is taking  1152 ms.
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 674.012 ; gain = 0.000 
+// e (cp):  Run Simulation : addNotify
+dismissDialog("Close"); // bx (cp)
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'counter_test' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj counter_test_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.srcs/sources_1/new/counter.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module counter INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.srcs/sim_1/new/counter_test.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module counter_test 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "counter_test_behav -key {Behavioral:sim_1:Functional:counter_test} -tclbatch {counter_test.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// PAPropertyPanels.initPanels (counter_test.sv) elapsed time: 0.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  1711 ms.
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source counter_test.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 656 MB. GUI used memory: 56 MB. Current time: 4/13/20, 4:45:35 PM CDT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: $finish called at time : 110 ns : File "C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.srcs/sim_1/new/counter_test.sv" Line 47 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_test_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 674.012 ; gain = 0.000 
+// 'd' command handler elapsed time: 17 seconds
+dismissDialog("Run Simulation"); // e (cp)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 2", 2); // k (j, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 656 MB. GUI used memory: 58 MB. Current time: 4/13/20, 4:45:43 PM CDT
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.sv", 0); // k (j, cp)
+selectCodeEditor("counter.sv", 134, 29); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 2", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter_test.sv", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 2", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter_test.sv", 1); // k (j, cp)
+selectCodeEditor("counter_test.sv", 81, 144); // cl (w, cp)
+selectCodeEditor("counter_test.sv", 59, 139); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("counter_test.sv", 187, 115); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 2", 2); // k (j, cp)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 2"); // w
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (Q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// c (cp): Save Simulation Sources: addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton (C, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (c)
+// bx (cp):  Close : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Save Simulation Sources"); // c (cp)
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// e (cp):  Run Simulation : addNotify
+dismissDialog("Close"); // bx (cp)
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'counter_test' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj counter_test_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.srcs/sources_1/new/counter.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module counter INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.srcs/sim_1/new/counter_test.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module counter_test 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "counter_test_behav -key {Behavioral:sim_1:Functional:counter_test} -tclbatch {counter_test.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// PAPropertyPanels.initPanels (counter_test.sv) elapsed time: 0.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  1565 ms.
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source counter_test.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 656 MB. GUI used memory: 58 MB. Current time: 4/13/20, 4:47:10 PM CDT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: $finish called at time : 110 ns : File "C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.srcs/sim_1/new/counter_test.sv" Line 47 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_test_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 674.012 ; gain = 0.000 
+// 'd' command handler elapsed time: 15 seconds
+dismissDialog("Run Simulation"); // e (cp)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 3", 2); // k (j, cp)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 656 MB. GUI used memory: 59 MB. Current time: 4/13/20, 4:47:18 PM CDT
+// Elapsed time: 13 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, en]", 5, false); // a (r, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+// HMemoryUtils.trashcanNow. Engine heap size: 680 MB. GUI used memory: 60 MB. Current time: 4/13/20, 4:47:43 PM CDT
+// Elapsed time: 13 seconds
+dismissFileChooser();
+// 'e' command handler elapsed time: 7 seconds
+// [Engine Memory]: 680 MB (+12508kb) [00:21:02]
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, clk]", 0, false); // a (r, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 680 MB. GUI used memory: 59 MB. Current time: 4/13/20, 4:47:48 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 680 MB. GUI used memory: 61 MB. Current time: 4/13/20, 4:47:55 PM CDT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1597 ms. Increasing delay to 4791 ms.
+// Waveform: addNotify
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 120 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_CLOSE_WCFG
+selectButton("RDIResource.WaveformUtils_WAVEFORM_CONFIGURATION_HAS_BEEN_MODIFIED_Discard", "Discard"); // JButton (C, I)
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 3*"); // w
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - counter_test", "DesignTask.SIMULATION");
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close : addNotify
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+dismissDialog("Confirm Close"); // A (cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  2077 ms.
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bx (cp)
+// Elapsed time: 55 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 10 seconds
+dismissFileChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm (Q, F)
+// Elapsed time: 24 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "sseg4_TDM"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 60 seconds
+setFileChooser("C:/Users/Gordoncrew/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/sseg4.sv");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 120 seconds
+dismissDialog("Add Sources"); // c (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -norecurse C:/Users/Gordoncrew/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/sseg4.sv 
+// Tcl Message: close [ open C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.srcs/sources_1/new/sseg4_TDM.sv w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.srcs/sources_1/new/sseg4_TDM.sv 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 14, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sseg4_TDM (sseg4_TDM.sv)]", 13, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sseg4_TDM (sseg4_TDM.sv)]", 13, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // af (al, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sseg4 (sseg4.sv)]", 9, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sseg4 (sseg4.sv)]", 9, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // af (al, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter_test.sv", 2); // k (j, cp)
+selectCodeEditor("counter_test.sv", 297, 25); // cl (w, cp)
+typeControlKey((HResource) null, "counter_test.sv", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 3); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 13, 350); // cl (w, cp)
+typeControlKey((HResource) null, "sseg4_TDM.sv", 'v'); // cl (w, cp)
+// [GUI Memory]: 118 MB (+667kb) [00:27:30]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter_test.sv", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 3); // k (j, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 3); // k (j, cp)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 3); // k (j, cp)
+selectCodeEditor("sseg4.sv", 208, 390); // cl (w, cp)
+typeControlKey((HResource) null, "sseg4.sv", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 189, 64); // cl (w, cp)
+typeControlKey((HResource) null, "sseg4_TDM.sv", 'v'); // cl (w, cp)
+// Elapsed time: 418 seconds
+selectCodeEditor("sseg4_TDM.sv", 217, 76); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 97, 138); // cl (w, cp)
+typeControlKey((HResource) null, "sseg4_TDM.sv", 'v'); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectCodeEditor("sseg4_TDM.sv", 244, 101); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 242, 95); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("sseg4_TDM.sv", 61, 138); // cl (w, cp)
+typeControlKey((HResource) null, "sseg4_TDM.sv", 'v'); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 62, 142); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 252, 130); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 204, 154); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 239, 131); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("sseg4_TDM.sv", 255, 79); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("sseg4_TDM.sv", 232, 187); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 235, 129); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 261, 157); // cl (w, cp)
+// Elapsed time: 27 seconds
+selectCodeEditor("sseg4_TDM.sv", 134, 94); // cl (w, cp)
+// Elapsed time: 99 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.sv", 1); // k (j, cp)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+// Elapsed time: 238 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.sv", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+// Elapsed time: 53 seconds
+selectCodeEditor("sseg4_TDM.sv", 172, 163); // cl (w, cp)
+// Elapsed time: 67 seconds
+selectCodeEditor("sseg4_TDM.sv", 368, 174); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 296, 163); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectCodeEditor("sseg4_TDM.sv", 323, 169, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectCodeEditor("sseg4_TDM.sv", 124, 104); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 353, 164); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 361, 164); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 356, 164); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 231, 40); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 297, 134); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 234, 44); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 240, 44); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 160, 142); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 172, 213); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 182, 175); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("sseg4_TDM.sv", 74, 148); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 240, 41); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 264, 52); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 251, 46); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 293, 126); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 212, 170); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 139, 143, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectCodeEditor("sseg4_TDM.sv", 114, 155); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 367, 168); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.sv", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 343, 165); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 318, 215); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.sv", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 119, 159); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 301, 329); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.sv", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 120, 159); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 312, 231); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.sv", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, counter_test (counter_test.sv)]", 8, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, counter_test (counter_test.sv)]", 8, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("counter_test.sv", 308, 299); // cl (w, cp)
+selectCodeEditor("counter_test.sv", 29, 289, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // af (al, Popup.HeavyWeightWindow)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 333, 160); // cl (w, cp)
+typeControlKey((HResource) null, "sseg4_TDM.sv", 'v'); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 224, 178); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 256, 179); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 155, 197); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 322, 180); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 253, 196); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 333, 161); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 156, 172); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 59, 130); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 81, 124, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectCodeEditor("sseg4_TDM.sv", 61, 153); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 111, 132); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 284, 156); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 264, 106); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 226, 143); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 166, 120); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 259, 105); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 229, 92); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 262, 213); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 166, 276); // cl (w, cp)
+// Elapsed time: 27 seconds
+selectCodeEditor("sseg4_TDM.sv", 300, 179); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 314, 210); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 198, 163); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 385, 175); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectCodeEditor("sseg4_TDM.sv", 329, 189); // cl (w, cp)
+// Elapsed time: 38 seconds
+selectCodeEditor("sseg4_TDM.sv", 197, 174); // cl (w, cp)
+// Elapsed time: 34 seconds
+selectCodeEditor("sseg4_TDM.sv", 331, 216); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectButton(RDIResource.FilterToolBar_SHOW_ALL, "Show All"); // a (f, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("sseg4_TDM.sv", 70, 159); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 688 MB. GUI used memory: 59 MB. Current time: 4/13/20, 5:18:00 PM CDT
+// Elapsed time: 41 seconds
+selectCodeEditor("sseg4_TDM.sv", 283, 211); // cl (w, cp)
+// Elapsed time: 301 seconds
+selectCodeEditor("sseg4_TDM.sv", 75, 187); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 67, 177); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("sseg4_TDM.sv", 245, 241); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 267, 210); // cl (w, cp)
+// Elapsed time: 106 seconds
+selectCodeEditor("sseg4_TDM.sv", 28, 129); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("sseg4_TDM.sv", 93, 348); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectCodeEditor("sseg4_TDM.sv", 323, 97); // cl (w, cp)
+typeControlKey((HResource) null, "sseg4_TDM.sv", 'c'); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 357, 113); // cl (w, cp)
+typeControlKey((HResource) null, "sseg4_TDM.sv", 'v'); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 64, 107); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 164, 151); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 290, 121); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 358, 103); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("sseg4_TDM.sv", 340, 88); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 326, 147); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.sv", 1); // k (j, cp)
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.sv", 1); // k (j, cp)
+selectCodeEditor("counter.sv", 157, 422); // cl (w, cp)
+typeControlKey((HResource) null, "counter.sv", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+typeControlKey((HResource) null, "sseg4_TDM.sv", 'v'); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 26, 162); // cl (w, cp)
+// Elapsed time: 32 seconds
+selectCodeEditor("sseg4_TDM.sv", 69, 228); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 215, 207); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("sseg4_TDM.sv", 224, 133); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 111, 157); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 187, 186); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 209, 167); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 165, 128); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 113, 164); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 145, 179); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 74, 179); // cl (w, cp)
+// Elapsed time: 29 seconds
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectCodeEditor("sseg4_TDM.sv", 223, 173); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("sseg4_TDM.sv", 26, 113); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 186, 150); // cl (w, cp)
+// Elapsed time: 66 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.sv", 1); // k (j, cp)
+selectCodeEditor("counter.sv", 254, 314); // cl (w, cp)
+selectCodeEditor("counter.sv", 271, 217); // cl (w, cp)
+// Elapsed time: 267 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+// Elapsed time: 138 seconds
+selectCodeEditor("sseg4_TDM.sv", 272, 284); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 299, 283); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 333, 293); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("sseg4_TDM.sv", 389, 180); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.sv", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter_test.sv", 4); // k (j, cp)
+selectCodeEditor("counter_test.sv", 332, 232); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files]", 9, true); // B (D, cp) - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 110, 59); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 91, 110); // cl (w, cp)
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.sv", 1); // k (j, cp)
+selectCodeEditor("counter.sv", 146, 425); // cl (w, cp)
+typeControlKey((HResource) null, "counter.sv", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 334, 104); // cl (w, cp)
+typeControlKey((HResource) null, "sseg4_TDM.sv", 'v'); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 96, 93); // cl (w, cp)
+// Elapsed time: 64 seconds
+selectCodeEditor("sseg4_TDM.sv", 146, 313); // cl (w, cp)
+typeControlKey((HResource) null, "sseg4_TDM.sv", 'c'); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 329, 238); // cl (w, cp)
+typeControlKey((HResource) null, "sseg4_TDM.sv", 'v'); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 81, 60); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 220, 62); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 280, 114); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("sseg4_TDM.sv", 155, 57); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("sseg4_TDM.sv", 370, 282); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("sseg4_TDM.sv", 200, 162); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("sseg4_TDM.sv", 186, 76); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("sseg4_TDM.sv", 76, 302); // cl (w, cp)
+// Elapsed time: 61 seconds
+selectCodeEditor("sseg4_TDM.sv", 178, 265); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 76, 299); // cl (w, cp)
+// Elapsed time: 33 seconds
+selectCodeEditor("sseg4_TDM.sv", 50, 174); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 230, 216); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 234, 189); // cl (w, cp)
+// Elapsed time: 28 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 3); // k (j, cp)
+selectCodeEditor("sseg4.sv", 181, 166); // cl (w, cp)
+selectCodeEditor("sseg4.sv", 223, 134); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 66, 400); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 321, 387); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 320, 434); // cl (w, cp)
+// Elapsed time: 48 seconds
+selectCodeEditor("sseg4_TDM.sv", 112, 266); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 91, 250); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 111, 261); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 73, 317); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 90, 299); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 136, 310); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 193, 339); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 73, 370); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 119, 289); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 109, 295); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 105, 282); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("sseg4_TDM.sv", 104, 248); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 135, 305); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 126, 326); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("sseg4_TDM.sv", 170, 192); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("sseg4_TDM.sv", 230, 165); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 244, 94); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 688 MB. GUI used memory: 56 MB. Current time: 4/13/20, 5:48:00 PM CDT
+// Elapsed time: 10 seconds
+selectCodeEditor("sseg4_TDM.sv", 218, 131); // cl (w, cp)
+typeControlKey((HResource) null, "sseg4_TDM.sv", 'v'); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 234, 126); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 255, 172); // cl (w, cp)
+// Elapsed time: 33 seconds
+selectCodeEditor("sseg4_TDM.sv", 175, 305); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 31 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sseg4 (sseg4.sv)]", 10); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, counter_test (counter_test.sv)]", 8); // B (D, cp)
+// Elapsed time: 31 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 10 seconds
+String[] filenames31467 = {"C:/Users/Gordoncrew/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/an_decode.sv", "C:/Users/Gordoncrew/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/mux2.sv", "C:/Users/Gordoncrew/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/mux4.sv", "C:/Users/Gordoncrew/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/sseg4_manual.sv"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 16 seconds
+dismissDialog("Add Sources"); // c (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -norecurse {C:/Users/Gordoncrew/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/an_decode.sv C:/Users/Gordoncrew/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/sseg4_manual.sv C:/Users/Gordoncrew/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/mux4.sv C:/Users/Gordoncrew/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/mux2.sv} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 43 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sseg4_manual (sseg4_manual.sv)]", 13); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sseg4_manual (sseg4_manual.sv)]", 13); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sseg4_TDM (sseg4_TDM.sv)]", 9); // B (D, cp)
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sseg4_TDM (sseg4_TDM.sv), sseg4_mux2_1 : mux2 (mux2.sv)]", 11, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sseg4_TDM (sseg4_TDM.sv), sseg4_mux2_1 : mux2 (mux2.sv)]", 11, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // af (al, cp)
+// Elapsed time: 28 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 211, 261); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("sseg4_TDM.sv", 59, 126); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("sseg4_TDM.sv", 184, 258); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 53, 257); // cl (w, cp)
+typeControlKey((HResource) null, "sseg4_TDM.sv", 'c'); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 42, 119); // cl (w, cp)
+typeControlKey((HResource) null, "sseg4_TDM.sv", 'v'); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 1, 127); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 96, 146); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 68, 129); // cl (w, cp)
+// Elapsed time: 70 seconds
+selectCodeEditor("sseg4_TDM.sv", 332, 246); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 363, 232); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("sseg4_TDM.sv", 58, 258); // cl (w, cp)
+// k (cp): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, cp)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_NO, "No"); // a (k)
+dismissDialog("Text Changed"); // k (cp)
+// Elapsed time: 11 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux2.sv", 3); // k (j, cp)
+// Elapsed time: 15 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sseg4_TDM (sseg4_TDM.sv)]", 9); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sseg4_TDM (sseg4_TDM.sv)]", 9, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sseg4_manual (sseg4_manual.sv)]", 13, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sseg4_manual (sseg4_manual.sv), boardconnect : sseg4 (sseg4.sv)]", 14, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sseg4_TDM (sseg4_TDM.sv)]", 9, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sseg4_TDM (sseg4_TDM.sv)]", 9, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // af (al, cp)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cp): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cp)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.srcs/sources_1/new/sseg4_TDM.sv] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// aE (cp): Remove Sources: addNotify
+// bx (aE):  Remove Sources : addNotify
+// Tcl Message: remove_files  C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.srcs/sources_1/new/sseg4_TDM.sv 
+dismissDialog("Remove Sources"); // bx (aE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sseg4_manual (sseg4_manual.sv), boardconnect : sseg4 (sseg4.sv)]", 12); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sseg4_manual (sseg4_manual.sv), boardconnect : sseg4 (sseg4.sv)]", 12, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sseg4_manual (sseg4_manual.sv), boardconnect : sseg4 (sseg4.sv)]", 12, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_manual (sseg4_manual.sv)]", 2); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_manual (sseg4_manual.sv), boardconnect : sseg4 (sseg4.sv)]", 3); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_manual (sseg4_manual.sv), boardconnect : sseg4 (sseg4.sv)]", 3, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_manual (sseg4_manual.sv), boardconnect : sseg4 (sseg4.sv)]", 3, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // af (al, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 65 seconds
+setFileChooser("C:/Users/Gordoncrew/Documents/GitHub/DL202010_GMLA/Lab08/disp.sv");
+// Elapsed time: 16 seconds
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 88 seconds
+dismissDialog("Add Sources"); // c (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -norecurse C:/Users/Gordoncrew/Documents/GitHub/DL202010_GMLA/Lab08/disp.sv 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 43 seconds
+dismissFileChooser();
+// 'h' command handler elapsed time: 48 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Elapsed time: 168 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_manual (sseg4_manual.sv), boardconnect : sseg4 (sseg4.sv)]", 3); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_manual (sseg4_manual.sv)]", 2); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sseg4_manual (sseg4_manual.sv), boardconnect : sseg4 (sseg4.sv)]", 13); // B (D, cp)
+// Elapsed time: 62 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 40 seconds
+String[] filenames16706 = {"C:/Users/Gordoncrew/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/add3.sv", "C:/Users/Gordoncrew/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/bcd11.sv"};
+setFileChooser(filenames16706);
+// Elapsed time: 13 seconds
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 10 seconds
+dismissFileChooser();
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 68 seconds
+dismissDialog("Add Sources"); // c (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -norecurse {C:/Users/Gordoncrew/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/bcd11.sv C:/Users/Gordoncrew/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/add3.sv} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 13 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sseg4_manual (sseg4_manual.sv), boardconnect : sseg4 (sseg4.sv)]", 13); // B (D, cp)
+// Elapsed time: 283 seconds
+selectCodeEditor("sseg4.sv", 177, 116); // cl (w, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm (Q, F)
+// Elapsed time: 20 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "sseg4_TDM"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// HOptionPane Warning: 'Create Source File'
+selectButton("PAResourceAtoD.CreateSrcFileDialog_FILE_WITH_SPECIFIED_NAME_ALREADY_OK", "OK"); // JButton (C, J)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 22 seconds
+setFileChooser("C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.srcs/sources_1/new/sseg4_TDM.sv");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 59 seconds
+dismissDialog("Add Sources"); // c (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.srcs/sources_1/new/sseg4_TDM.sv 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv)]", 1, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // af (al, cp)
+selectCodeEditor("sseg4_TDM.sv", 135, 194); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter_test.sv", 2); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.sv", 1); // k (j, cp)
+selectCodeEditor("counter.sv", 105, 92); // cl (w, cp)
+selectCodeEditor("counter.sv", 355, 218); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 4); // k (j, cp)
+// Elapsed time: 57 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.sv", 1); // k (j, cp)
+// Elapsed time: 29 seconds
+selectCodeEditor("counter.sv", 155, 421); // cl (w, cp)
+typeControlKey((HResource) null, "counter.sv", 'c'); // cl (w, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm (Q, F)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "timer"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 14 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.srcs/sources_1/new/timer.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.srcs/sources_1/new/timer.sv 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+selectCodeEditor("counter.sv", 333, 234); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, timer (timer.sv)]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, timer (timer.sv)]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("timer.sv", 36, 368); // cl (w, cp)
+selectCodeEditor("timer.sv", 82, 440); // cl (w, cp)
+typeControlKey((HResource) null, "timer.sv", 'v'); // cl (w, cp)
+selectCodeEditor("timer.sv", 94, 59); // cl (w, cp)
+selectCodeEditor("timer.sv", 312, 128); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("timer.sv", 194, 57); // cl (w, cp)
+selectCodeEditor("timer.sv", 256, 101); // cl (w, cp)
+selectCodeEditor("timer.sv", 236, 149); // cl (w, cp)
+selectCodeEditor("timer.sv", 105, 197); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("timer.sv", 187, 369); // cl (w, cp)
+selectCodeEditor("timer.sv", 172, 78); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_manual.sv", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 3); // k (j, cp)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_manual.sv", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 3); // k (j, cp)
+selectCodeEditor("sseg4.sv", 237, 43); // cl (w, cp)
+selectCodeEditor("sseg4.sv", 94, 41, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // af (al, cp)
+selectCodeEditor("sseg4.sv", 60, 108); // cl (w, cp)
+typeControlKey((HResource) null, "sseg4.sv", 'v'); // cl (w, cp)
+selectCodeEditor("sseg4.sv", 59, 114); // cl (w, cp)
+selectCodeEditor("sseg4.sv", 212, 119); // cl (w, cp)
+selectCodeEditor("sseg4.sv", 83, 144); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 5); // k (j, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("timer.sv", 47, 76); // cl (w, cp)
+selectCodeEditor("timer.sv", 261, 177); // cl (w, cp)
+selectCodeEditor("timer.sv", 370, 324); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 683ms to process. Increasing delay to 3000 ms.
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_manual.sv", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 3); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, counter (counter.sv)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_manual (sseg4_manual.sv)]", 3, true); // B (D, cp) - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_manual.sv", 2); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_manual (sseg4_manual.sv)]", 3, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.sv", 1); // k (j, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv)]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv), sseg4_bcd11 : bcd11 (bcd11.sv)]", 2); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv), sseg4_bcd11 : bcd11 (bcd11.sv)]", 2); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab9 (top_lab9.sv)]", 8); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_lab9 (top_lab9.sv)]", 8); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, counter (counter.sv)]", 10, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, counter_test (counter_test.sv)]", 16, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, counter_test (counter_test.sv)]", 16, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("counter_test.sv", 302, 297); // cl (w, cp)
+typeControlKey((HResource) null, "counter_test.sv", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.sv", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter_test.sv", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 3); // k (j, cp)
+typeControlKey((HResource) null, "sseg4_TDM.sv", 'v'); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 53, 231); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 37, 252); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 1, 229); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 177, 269); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter_test.sv", 5); // k (j, cp)
+selectCodeEditor("counter_test.sv", 200, 195); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 3); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 111, 235); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 219, 272); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("sseg4_TDM.sv", 150, 150); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 239, 156); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 284, 247); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 344, 265); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 55, 244); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 688 MB. GUI used memory: 59 MB. Current time: 4/13/20, 6:18:01 PM CDT
+selectCodeEditor("sseg4_TDM.sv", 212, 257); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 229, 232); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 262, 253); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 4); // k (j, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm (Q, F)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "counter2"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 15 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.srcs/sources_1/new/counter2.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.srcs/sources_1/new/counter2.sv 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, counter2 (counter2.sv)]", 31, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, counter2 (counter2.sv)]", 31, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // af (al, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.sv", 1); // k (j, cp)
+selectCodeEditor("counter.sv", 134, 436); // cl (w, cp)
+typeControlKey((HResource) null, "counter.sv", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter2.sv", 6); // k (j, cp)
+selectCodeEditor("counter2.sv", 16, 361); // cl (w, cp)
+selectCodeEditor("counter2.sv", 53, 416); // cl (w, cp)
+typeControlKey((HResource) null, "counter2.sv", 'v'); // cl (w, cp)
+selectCodeEditor("counter2.sv", 92, 61); // cl (w, cp)
+selectCodeEditor("counter2.sv", 96, 63, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("counter2.sv", 252, 128); // cl (w, cp)
+selectCodeEditor("counter2.sv", 212, 60); // cl (w, cp)
+selectCodeEditor("counter2.sv", 176, 157); // cl (w, cp)
+selectCodeEditor("counter2.sv", 126, 108); // cl (w, cp)
+selectCodeEditor("counter2.sv", 134, 256); // cl (w, cp)
+selectCodeEditor("counter2.sv", 367, 351); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter_test.sv", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter2.sv", 6); // k (j, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 3); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 377, 178); // cl (w, cp)
+typeControlKey((HResource) null, "sseg4_TDM.sv", 'c'); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 60, 195); // cl (w, cp)
+typeControlKey((HResource) null, "sseg4_TDM.sv", 'v'); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 1, 189); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 63, 192); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 136, 197); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("sseg4_TDM.sv", 354, 177); // cl (w, cp)
+// Elapsed time: 49 seconds
+selectCodeEditor("sseg4_TDM.sv", 291, 142); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 291, 131); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("sseg4_TDM.sv", 177, 201); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 186, 215); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 212, 245); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("sseg4_TDM.sv", 353, 201); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("sseg4_TDM.sv", 459, 220); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 4); // k (j, cp)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 3); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 333, 252); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("sseg4_TDM.sv", 377, 213); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("sseg4_TDM.sv", 384, 356); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 483, 207); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 426, 263); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("sseg4_TDM.sv", 389, 314); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 347, 271); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 226, 349); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 384, 219); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 299, 245); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectCodeEditor("sseg4_TDM.sv", 72, 190); // cl (w, cp)
+// Elapsed time: 41 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv), sseg4_bcd11 : bcd11 (bcd11.sv)]", 3); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv), sseg4_bcd11 : bcd11 (bcd11.sv)]", 3, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv), sseg4_bcd11 : bcd11 (bcd11.sv)]", 3, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // af (al, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 3); // k (j, cp)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.sv", 1); // k (j, cp)
+selectCodeEditor("counter.sv", 108, 86); // cl (w, cp)
+selectCodeEditor("counter.sv", 114, 59); // cl (w, cp)
+selectCodeEditor("counter.sv", 288, 160); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 3); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 84, 200); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("sseg4_TDM.sv", 478, 194); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 80, 246); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("sseg4_TDM.sv", 153, 165); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 85, 162); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 182, 219); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 146, 167); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 281, 171); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.sv", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 3); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 148, 232); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 190, 278); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 109, 228); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter2.sv", 6); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 4); // k (j, cp)
+selectCodeEditor("timer.sv", 65, 183); // cl (w, cp)
+selectCodeEditor("timer.sv", 217, 44); // cl (w, cp)
+selectCodeEditor("timer.sv", 69, 179); // cl (w, cp)
+selectCodeEditor("timer.sv", 162, 279); // cl (w, cp)
+selectCodeEditor("timer.sv", 195, 385); // cl (w, cp)
+selectCodeEditor("timer.sv", 215, 412); // cl (w, cp)
+selectCodeEditor("timer.sv", 201, 382); // cl (w, cp)
+selectCodeEditor("timer.sv", 292, 421); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 3); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 188, 161); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 31, 194); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 142, 263); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 3); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 81, 166); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("sseg4_TDM.sv", 266, 217); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 64, 163); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 240, 199); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 104, 165); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 4); // k (j, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectCodeEditor("timer.sv", 234, 85); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 3); // k (j, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("sseg4_TDM.sv", 159, 359); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("sseg4_TDM.sv", 216, 383); // cl (w, cp)
+typeControlKey((HResource) null, "sseg4_TDM.sv", 'c'); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 79, 177); // cl (w, cp)
+typeControlKey((HResource) null, "sseg4_TDM.sv", 'v'); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 127, 179); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("sseg4_TDM.sv", 200, 256); // cl (w, cp)
+// Elapsed time: 58 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 4); // k (j, cp)
+selectCodeEditor("timer.sv", 183, 177); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 3); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 89, 162); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 218, 194); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("sseg4_TDM.sv", 228, 246); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 320, 259); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 365, 215); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 146, 178); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("sseg4_TDM.sv", 303, 217); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("sseg4_TDM.sv", 104, 242); // cl (w, cp)
+// Elapsed time: 25 seconds
+selectCodeEditor("sseg4_TDM.sv", 294, 250); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd11.sv", 7); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 3); // k (j, cp)
+// Elapsed time: 37 seconds
+selectCodeEditor("sseg4_TDM.sv", 223, 218); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 141, 212); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("sseg4_TDM.sv", 59, 218); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("sseg4_TDM.sv", 146, 214); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 303, 289); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 83, 243); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 149, 253); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 304, 251); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("sseg4_TDM.sv", 610, 245); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 4); // k (j, cp)
+selectCodeEditor("timer.sv", 302, 163); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4.sv", 2); // k (j, cp)
+// k (cp): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, cp)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_NO, "No"); // a (k)
+dismissDialog("Text Changed"); // k (cp)
+selectCodeEditor("sseg4_TDM.sv", 388, 58); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter_test.sv", 4); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectCodeEditor("counter2.sv", 118, 431); // cl (w, cp)
+selectCodeEditor("counter2.sv", 329, 424); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bcd11.sv", 5); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 281, 123); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 39, 141); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 78 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 3); // k (j, cp)
+selectCodeEditor("timer.sv", 241, 132); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter2.sv", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter2.sv", 4); // k (j, cp)
+selectCodeEditor("counter2.sv", 121, 122); // cl (w, cp)
+selectCodeEditor("counter2.sv", 129, 119); // cl (w, cp)
+selectCodeEditor("counter2.sv", 133, 110); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("counter2.sv", 295, 242); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 3); // k (j, cp)
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+// Elapsed time: 46 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 182, 190); // cl (w, cp)
+// Elapsed time: 41 seconds
+selectCodeEditor("sseg4_TDM.sv", 304, 239); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 485, 217); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 486, 253); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 142, 168); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("sseg4_TDM.sv", 495, 332); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter.sv", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 140, 164); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("sseg4_TDM.sv", 134, 163); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 311, 232); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 137, 161); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("sseg4_TDM.sv", 284, 192); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 177, 211); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 194, 214); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 312, 259); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 175, 214); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 187, 207); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 144, 227); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 160, 217, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectCodeEditor("sseg4_TDM.sv", 148, 217); // cl (w, cp)
+// Elapsed time: 105 seconds
+selectCodeEditor("sseg4_TDM.sv", 122, 163); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 326, 240); // cl (w, cp)
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 58, 143); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 64, 148); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("sseg4_TDM.sv", 217, 186); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 508, 157); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 498, 162); // cl (w, cp)
+typeControlKey((HResource) null, "sseg4_TDM.sv", 'c'); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 48, 179); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 30, 175); // cl (w, cp)
+typeControlKey((HResource) null, "sseg4_TDM.sv", 'v'); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 60, 175); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("sseg4_TDM.sv", 135, 182); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 140, 182); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("sseg4_TDM.sv", 375, 221); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 688 MB. GUI used memory: 61 MB. Current time: 4/13/20, 6:48:01 PM CDT
+// Elapsed time: 54 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 3); // k (j, cp)
+// Elapsed time: 51 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+// Elapsed time: 39 seconds
+selectCodeEditor("sseg4_TDM.sv", 251, 181); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 309, 195); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 504, 157); // cl (w, cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("sseg4_TDM.sv", 290, 352); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 273, 370); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv), sseg4_mux2_1 : mux2 (mux2.sv)]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv), sseg4_mux2_1 : mux2 (mux2.sv)]", 3, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // af (al, cp)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux2.sv", 5); // k (j, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+// Elapsed time: 38 seconds
+selectCodeEditor("sseg4_TDM.sv", 101, 199); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 186, 247); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 3); // k (j, cp)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("sseg4_TDM.sv", 539, 215); // cl (w, cp)
+// Elapsed time: 67 seconds
+selectCodeEditor("sseg4_TDM.sv", 504, 215); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 81, 161); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 123, 148); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 106, 219); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("sseg4_TDM.sv", 251, 231); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 202, 276); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("sseg4_TDM.sv", 61, 143); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("sseg4_TDM.sv", 479, 176); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 547, 295); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 542, 228); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 638, 258); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ac (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ac (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Elapsed time: 112 seconds
+selectCodeEditor("sseg4_TDM.sv", 229, 315); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 688 MB. GUI used memory: 60 MB. Current time: 4/13/20, 7:18:02 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 688 MB. GUI used memory: 60 MB. Current time: 4/13/20, 7:48:02 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 688 MB. GUI used memory: 60 MB. Current time: 4/13/20, 8:18:03 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 688 MB. GUI used memory: 60 MB. Current time: 4/13/20, 8:48:03 PM CDT
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1981 ms to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 688 MB. GUI used memory: 59 MB. Current time: 4/13/20, 9:18:04 PM CDT
+// Elapsed time: 9760 seconds
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // B (f, cp)
+selectCodeEditor("sseg4_TDM.sv", 288, 220); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // B (f, cp)
+selectCodeEditor("sseg4_TDM.sv", 331, 247); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm (Q, F)
+// Elapsed time: 28 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "sseg_decoder"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 35 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.srcs/sources_1/new/sseg_decoder.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.srcs/sources_1/new/sseg_decoder.sv 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv), sseg4_decode : sseg_decoder (sseg_decoder.sv)]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv), sseg4_decode : sseg_decoder (sseg_decoder.sv)]", 7, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // af (al, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter2.sv", 4); // k (j, cp)
+selectCodeEditor("counter2.sv", 305, 30); // cl (w, cp)
+typeControlKey((HResource) null, "counter2.sv", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg_decoder.sv", 5); // k (j, cp)
+selectCodeEditor("sseg_decoder.sv", 7, 349); // cl (w, cp)
+typeControlKey((HResource) null, "sseg_decoder.sv", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 136 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter2.sv", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg_decoder.sv", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 397, 313); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 460, 335); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv), an_decode_sseg4 : an_decode (an_decode.sv)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv), sseg4_decode : sseg_decoder (sseg_decoder.sv)]", 7, false); // B (D, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg_decoder.sv", 5); // k (j, cp)
+selectCodeEditor("sseg_decoder.sv", 80, 78); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 688 MB. GUI used memory: 61 MB. Current time: 4/13/20, 9:48:04 PM CDT
+// Elapsed time: 315 seconds
+selectCodeEditor("sseg_decoder.sv", 193, 260); // cl (w, cp)
+typeControlKey((HResource) null, "sseg_decoder.sv", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "sseg_decoder.sv", 'c'); // cl (w, cp)
+selectCodeEditor("sseg_decoder.sv", 231, 265); // cl (w, cp)
+typeControlKey((HResource) null, "sseg_decoder.sv", 'v'); // cl (w, cp)
+selectCodeEditor("sseg_decoder.sv", 54, 276); // cl (w, cp)
+// Elapsed time: 66 seconds
+selectCodeEditor("sseg_decoder.sv", 197, 333); // cl (w, cp)
+typeControlKey((HResource) null, "sseg_decoder.sv", 'c'); // cl (w, cp)
+selectCodeEditor("sseg_decoder.sv", 198, 323); // cl (w, cp)
+typeControlKey((HResource) null, "sseg_decoder.sv", 'v'); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("sseg_decoder.sv", 250, 415); // cl (w, cp)
+selectCodeEditor("sseg_decoder.sv", 51, 346); // cl (w, cp)
+// Elapsed time: 75 seconds
+selectCodeEditor("sseg_decoder.sv", 53, 361); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("sseg_decoder.sv", 202, 367); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 32 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+// Elapsed time: 110 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv), sseg4_mux2_1 : mux2 (mux2.sv)]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv), sseg4_mux2_1 : mux2 (mux2.sv)]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv), sseg4_bcd11 : bcd11 (bcd11.sv)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv), sseg4_bcd11 : bcd11 (bcd11.sv), ic4 : add3 (add3.sv)]", 8, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 18 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv), sseg4_bcd11 : bcd11 (bcd11.sv)]", 4); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv), sseg4_mux2_1 : mux2 (mux2.sv)]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv), sseg4_mux2_1 : mux2 (mux2.sv)]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 32 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv), an_decode_sseg4 : an_decode (an_decode.sv)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv), an_decode_sseg4 : an_decode (an_decode.sv)]", 8, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg4_TDM (sseg4_TDM.sv), sseg4_mux2_2 : mux2 (mux2.sv)]", 9, false); // B (D, cp)
+// Elapsed time: 64 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter2.sv", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timer.sv", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sseg4_TDM.sv", 2); // k (j, cp)
+selectCodeEditor("sseg4_TDM.sv", 195, 164); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 49 seconds
+selectCodeEditor("sseg4_TDM.sv", 384, 348); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 191, 373); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("sseg4_TDM.sv", 272, 319); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 386, 356); // cl (w, cp)
+selectCodeEditor("sseg4_TDM.sv", 370, 370); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 688 MB. GUI used memory: 61 MB. Current time: 4/13/20, 10:18:05 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 688 MB. GUI used memory: 61 MB. Current time: 4/13/20, 10:48:05 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 688 MB. GUI used memory: 61 MB. Current time: 4/13/20, 11:18:05 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 688 MB. GUI used memory: 60 MB. Current time: 4/13/20, 11:48:06 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 688 MB. GUI used memory: 61 MB. Current time: 4/14/20, 12:18:06 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 688 MB. GUI used memory: 60 MB. Current time: 4/14/20, 12:48:07 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 688 MB. GUI used memory: 60 MB. Current time: 4/14/20, 1:18:07 AM CDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13559 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm (Q, F)
+// Elapsed time: 10 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "calc_lab10"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 17 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.srcs/sources_1/new/calc_lab10.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab10/Lab10.srcs/sources_1/new/calc_lab10.sv 
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
