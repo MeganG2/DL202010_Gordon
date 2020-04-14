@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Apr 14 11:29:41 2020
+# Process ID: 4988
+# Current directory: C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8588 C:\Users\Gordoncrew\Documents\GitHub\DL202010_Gordon\MyLab7\MyLab7.xpr
+# Log file: C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab7/vivado.log
+# Journal file: C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab7/MyLab7.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/MyLab7' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_JCLA/Lab06/Lab06/Lab06.srcs/sources_1/new/mux2_4b.sv', nor could it be found using path 'C:/Users/LACKEY/Documents/GitHub/DL202010_JCLA/Lab06/Lab06/Lab06.srcs/sources_1/new/mux2_4b.sv'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_JCLA/Lab06/Lab06/Lab06.srcs/sources_1/new/sseg_decoder.sv', nor could it be found using path 'C:/Users/LACKEY/Documents/GitHub/DL202010_JCLA/Lab06/Lab06/Lab06.srcs/sources_1/new/sseg_decoder.sv'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:13 . Memory (MB): peak = 674.641 ; gain = 81.156
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab08/Lab08.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_GMLA/Lab08' since last save.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_JCLA/Lab06/Lab06/Lab06.srcs/sources_1/new/sseg_decoder.sv'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 787.137 ; gain = 20.824
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab08/Lab08.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_GMLA/Lab08' since last save.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_JCLA/Lab06/Lab06/Lab06.srcs/sources_1/new/sseg_decoder.sv'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 793.664 ; gain = 0.000
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_3]
+close [ open C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab08/Lab08.srcs/sim_3/new/sseg_decoder.sv w ]
+add_files -fileset sim_3 C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab08/Lab08.srcs/sim_3/new/sseg_decoder.sv
+update_compile_order -fileset sim_3
+update_files -from_files C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab08/Lab08.srcs/sim_3/new/sseg_decoder.sv -to_files C:/Users/Gordoncrew/Documents/GitHub/DL202010_JCLA/Lab06/Lab06/Lab06.srcs/sources_1/new/sseg_decoder.sv -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_JCLA/Lab06/Lab06/Lab06.srcs/sources_1/new/sseg_decoder.sv' with file 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab08/Lab08.srcs/sim_3/new/sseg_decoder.sv'.
+export_ip_user_files -of_objects  [get_files C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab08/Lab08.srcs/sim_3/new/sseg_decoder.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab08/Lab08.srcs/sim_3/new/sseg_decoder.sv

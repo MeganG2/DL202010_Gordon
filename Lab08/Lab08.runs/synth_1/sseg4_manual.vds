@@ -1,0 +1,322 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Mar  5 16:28:49 2020
+# Process ID: 4284
+# Current directory: C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.runs/synth_1
+# Command line: vivado.exe -log sseg4_manual.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sseg4_manual.tcl
+# Log file: C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.runs/synth_1/sseg4_manual.vds
+# Journal file: C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sseg4_manual.tcl -notrace
+Command: synth_design -top sseg4_manual -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 292 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 372.285 ; gain = 100.840
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sseg4_manual' [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/sseg4_manual.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'sseg4' [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/sseg4.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'bcd11' [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/bcd11.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'add3' [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/add3.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'add3' (1#1) [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/add3.sv:4]
+WARNING: [Synth 8-689] width (35) of port connection 'B' does not match port width (4) of module 'add3' [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/bcd11.sv:25]
+WARNING: [Synth 8-689] width (35) of port connection 'B' does not match port width (4) of module 'add3' [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/bcd11.sv:41]
+WARNING: [Synth 8-689] width (35) of port connection 'B' does not match port width (4) of module 'add3' [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/bcd11.sv:51]
+INFO: [Synth 8-6155] done synthesizing module 'bcd11' (2#1) [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/MyLab7/MyLab7.srcs/sources_1/new/bcd11.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/mux2.sv:3]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (3#1) [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/mux2.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/mux4.sv:4]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (4#1) [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/mux4.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'sseg_decoder' [C:/Users/LACKEY/Documents/GitHub/DL202010_JCLA/Lab06/Lab06/Lab06.srcs/sources_1/new/sseg_decoder.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'sseg_decoder' (5#1) [C:/Users/LACKEY/Documents/GitHub/DL202010_JCLA/Lab06/Lab06/Lab06.srcs/sources_1/new/sseg_decoder.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'an_decode' [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/an_decode.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'an_decode' (6#1) [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/an_decode.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/mux2.sv:3]
+	Parameter N bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (6#1) [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/mux2.sv:3]
+WARNING: [Synth 8-689] width (8) of port connection 'out' does not match port width (7) of module 'mux2__parameterized0' [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/sseg4.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'sseg4' (7#1) [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/sseg4.sv:4]
+WARNING: [Synth 8-689] width (7) of port connection 'seg' does not match port width (8) of module 'sseg4' [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/sseg4_manual.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'sseg4_manual' (8#1) [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.srcs/sources_1/new/sseg4_manual.sv:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 428.105 ; gain = 156.660
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 428.105 ; gain = 156.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 428.105 ; gain = 156.660
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/sseg.xdc]
+Finished Parsing XDC File [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/sseg.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/sseg.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sseg4_manual_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/sseg4_manual_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/switches.xdc]
+Finished Parsing XDC File [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/switches.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/switches.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sseg4_manual_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/sseg4_manual_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 745.617 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 745.617 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 745.617 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 745.617 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 745.617 ; gain = 474.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 745.617 ; gain = 474.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 745.617 ; gain = 474.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 745.617 ; gain = 474.172
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 15    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 15    
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module add3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module mux4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module an_decode 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module mux2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design sseg4_manual has port dp driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 745.617 ; gain = 474.172
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 747.770 ; gain = 476.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 747.867 ; gain = 476.422
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 764.160 ; gain = 492.715
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 764.160 ; gain = 492.715
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 764.160 ; gain = 492.715
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 764.160 ; gain = 492.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 764.160 ; gain = 492.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 764.160 ; gain = 492.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 764.160 ; gain = 492.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     4|
+|2     |LUT3 |     4|
+|3     |LUT4 |     2|
+|4     |LUT5 |    17|
+|5     |LUT6 |    26|
+|6     |IBUF |    16|
+|7     |OBUF |    12|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    81|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 764.160 ; gain = 492.715
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 764.160 ; gain = 175.203
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 764.160 ; gain = 492.715
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 769.926 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 769.926 ; gain = 510.734
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 769.926 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/Lab08/Lab08.runs/synth_1/sseg4_manual.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sseg4_manual_utilization_synth.rpt -pb sseg4_manual_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  5 16:29:20 2020...

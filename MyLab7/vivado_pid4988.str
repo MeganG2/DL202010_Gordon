@@ -1,0 +1,345 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 4988
+License: Customer
+
+Current time: 	Tue Apr 14 11:30:09 CDT 2020
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1280x1024
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 640 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Gordoncrew
+User home directory: C:/Users/Gordoncrew
+User working directory: C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab7
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Users/Gordoncrew/Desktop/xilinx/Vivado
+HDI_APPROOT: C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Gordoncrew/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Gordoncrew/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Gordoncrew/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab7/vivado.log
+Vivado journal file location: 	C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab7/vivado.jou
+Engine tmp dir: 	C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab7/.Xil/Vivado-4988-Gordoncrew-PC
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3
+XILINX_VIVADO: C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 564 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Gordoncrew\Documents\GitHub\DL202010_Gordon\MyLab7\MyLab7.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab7/MyLab7.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab7/MyLab7.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/LACKEY/Documents/GitHub/DL202010_GMLA/MyLab7' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 580 MB. GUI used memory: 41 MB. Current time: 4/14/20, 11:30:11 AM CDT
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 94 MB (+96060kb) [00:00:23]
+// [Engine Memory]: 580 MB (+456903kb) [00:00:23]
+// WARNING: HEventQueue.dispatchEvent() is taking  7095 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1142 ms.
+// [Engine Memory]: 667 MB (+60510kb) [00:00:31]
+// Tcl Message: open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:13 . Memory (MB): peak = 674.641 ; gain = 81.156 
+// Project name: MyLab7; location: C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab7; part: xc7a35tcpg236-1
+// [GUI Memory]: 106 MB (+7497kb) [00:00:32]
+dismissDialog("Open Project"); // bx (cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1459 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 667 MB. GUI used memory: 19 MB. Current time: 4/14/20, 11:30:27 AM CDT
+// a (cp): Critical Messages: addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// WARNING: HEventQueue.dispatchEvent() is taking  1039 ms.
+// [Engine Memory]: 721 MB (+21679kb) [00:00:49]
+// Elapsed time: 100 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg1_BCD (sseg1_BCD.sv)]", 2); // B (D, cp)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Project Manager", "Project Manager", "DesignTask.PROJECT_MANAGER");
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (cp): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close Project : addNotify
+dismissDialog("Close Project"); // A (cp)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 736 MB. GUI used memory: 56 MB. Current time: 4/14/20, 11:32:21 AM CDT
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bx (cp)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ac (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// Elapsed time: 10 seconds
+setFileChooser("C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab08/Lab08.xpr");
+// Opening Vivado Project: C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab08/Lab08.xpr. Version: Vivado v2018.3 
+// bx (cp):  Open Project : addNotify
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab08/Lab08.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_GMLA/Lab08' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 758 MB (+921kb) [00:02:51]
+// WARNING: HEventQueue.dispatchEvent() is taking  3231 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 787.137 ; gain = 20.824 
+// HMemoryUtils.trashcanNow. Engine heap size: 788 MB. GUI used memory: 50 MB. Current time: 4/14/20, 11:32:47 AM CDT
+// Project name: Lab08; location: C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab08; part: xc7a35tcpg236-1
+// 'i' command handler elapsed time: 20 seconds
+dismissDialog("Open Project"); // bx (cp)
+// a (cp): Critical Messages: addNotify
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 35 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3]", 6); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, an_decode_test (an_decode_test.sv)]", 8); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, an_decode_test (an_decode_test.sv)]", 8); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, Non-module Files]", 7); // B (D, cp)
+// PAPropertyPanels.initPanels (sseg_decoder.sv) elapsed time: 0.4s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, Non-module Files, sseg_decoder.sv]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, Non-module Files, sseg_decoder.sv]", 8, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+// Elapsed time: 267 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Project Manager", "Project Manager", "DesignTask.PROJECT_MANAGER");
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (cp): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+dismissDialog("Close Project"); // A (cp)
+// Tcl Message: close_project 
+// HMemoryUtils.trashcanNow. Engine heap size: 788 MB. GUI used memory: 48 MB. Current time: 4/14/20, 11:38:12 AM CDT
+dismissDialog("Close Project"); // bx (cp)
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab08/Lab08.xpr", 0); // q (Q, cp)
+// Opening Vivado Project: C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab08/Lab08.xpr. Version: Vivado v2018.3 
+// bx (cp):  Open Project : addNotify
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab08/Lab08.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_GMLA/Lab08' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Users/Gordoncrew/Desktop/xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  2600 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 793.664 ; gain = 0.000 
+// Project name: Lab08; location: C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab08; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bx (cp)
+// a (cp): Critical Messages: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1150 ms.
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a (a)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // a (cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3]", 6); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, Non-module Files]", 7); // B (D, cp)
+// PAPropertyPanels.initPanels (sseg_decoder.sv) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, Non-module Files, sseg_decoder.sv]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, Non-module Files, sseg_decoder.sv]", 8, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+// Elapsed time: 18 seconds
+dismissFileChooser();
+// 'dI' command handler elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm (Q, F)
+// Elapsed time: 71 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "sseg_decoder"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 90 seconds
+dismissDialog("Add Sources"); // c (cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_3] 
+// bx (cp):  Add Simulation Sources  : addNotify
+// Tcl Message: close [ open C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab08/Lab08.srcs/sim_3/new/sseg_decoder.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_3 C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab08/Lab08.srcs/sim_3/new/sseg_decoder.sv 
+// I (cp): Define Module: addNotify
+dismissDialog("Add Simulation Sources"); // bx (cp)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_3 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, Non-module Files, sseg_decoder.sv]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, Non-module Files, sseg_decoder.sv]", 9, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+// Elapsed time: 33 seconds
+setFileChooser("C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab08/Lab08.srcs/sim_3/new/sseg_decoder.sv");
+// 'dI' command handler elapsed time: 33 seconds
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_files -from_files C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab08/Lab08.srcs/sim_3/new/sseg_decoder.sv -to_files C:/Users/Gordoncrew/Documents/GitHub/DL202010_JCLA/Lab06/Lab06/Lab06.srcs/sources_1/new/sseg_decoder.sv -filesets [get_filesets *] 
+// Tcl Message: INFO: [filemgmt 20-762] Replacing file 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_JCLA/Lab06/Lab06/Lab06.srcs/sources_1/new/sseg_decoder.sv' with file 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab08/Lab08.srcs/sim_3/new/sseg_decoder.sv'. 
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, Non-module Files, sseg_decoder.sv]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, Non-module Files, sseg_decoder.sv]", 8, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, Non-module Files, sseg_decoder.sv]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, Non-module Files, sseg_decoder.sv]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, an_decode_test (an_decode_test.sv)]", 10, true); // B (D, cp) - Node
+// [GUI Memory]: 113 MB (+1706kb) [00:12:16]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, an_decode_test (an_decode_test.sv)]", 10, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("an_decode_test.sv", 33, 38); // cl (w, cp)
+typeControlKey((HResource) null, "an_decode_test.sv", 'c'); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, Non-module Files, sseg_decoder.sv]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, an_decode_test (an_decode_test.sv), an_decode_tester : an_decode (an_decode.sv)]", 11, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, an_decode_test (an_decode_test.sv), an_decode_tester : an_decode (an_decode.sv)]", 11, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, Non-module Files, sseg_decoder.sv]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, Non-module Files, sseg_decoder.sv]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+typeControlKey((HResource) null, "sseg_decoder.sv", 'v'); // cl (w, cp)
+selectCodeEditor("sseg_decoder.sv", 146, 23); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("sseg_decoder.sv", 270, 26); // cl (w, cp)
+selectCodeEditor("sseg_decoder.sv", 348, 100); // cl (w, cp)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1067 ms. Increasing delay to 3201 ms.
+// Elapsed time: 236 seconds
+typeControlKey((HResource) null, "sseg_decoder.sv", 'v'); // cl (w, cp)
+selectCodeEditor("sseg_decoder.sv", 40, 164); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, an_decode_test (an_decode_test.sv)]", 7); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3]", 6); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg_decoder (sseg_decoder.sv)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg_decoder (sseg_decoder.sv)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_4]", 5); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_4, sseg_decoder (sseg_decoder.sv)]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_4, sseg_decoder (sseg_decoder.sv)]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+// PAPropertyPanels.initPanels (sim_3) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3]", 8, true); // B (D, cp) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3]", 8); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, sseg_decoder (sseg_decoder.sv)]", 12, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, sseg_decoder (sseg_decoder.sv)]", 12, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, sseg_decoder (sseg_decoder.sv)]", 12, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, sseg_decoder (sseg_decoder.sv)]", 11, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, sseg_decoder (sseg_decoder.sv)]", 11, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, sseg_decoder (sseg_decoder.sv)]", 12, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, sseg_decoder (sseg_decoder.sv)]", 12, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // af (al, cp)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cp): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cp)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab08/Lab08.srcs/sim_3/new/sseg_decoder.sv] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// aE (cp): Remove Sources: addNotify
+// bx (aE):  Remove Sources : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab08/Lab08.srcs/sim_3/new/sseg_decoder.sv 
+dismissDialog("Remove Sources"); // bx (aE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_3, sseg_decoder (sseg_decoder.sv)]", 12, false); // B (D, cp)
