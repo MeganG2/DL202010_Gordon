@@ -14,7 +14,7 @@ module sseg4_TDM(input [15:0] data,
     counter #(.N(18))timer(.clk(clk), .rst(rst), .en(en), .tick(tick1));
     
     
-    counter #(.N(2))counter2(.clk(clk), .rst(rst), .en(tick1), .count(digit_sel));
+    counter #(.N(2))counter2(.clk(tick1), .rst(rst), .en(en), .count(digit_sel));
             
     wire [15:0] bcd11out;
     bcd11 sseg4_bcd11(.B(data[10:0]), .Boutfinal(bcd11out));

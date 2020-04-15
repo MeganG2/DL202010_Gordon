@@ -65,6 +65,7 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_param xicom.use_bs_reader 1
   open_checkpoint calc_lab10_routed.dcp
   set_property webtalk.parent_dir C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.cache/wt [current_project]
   catch { write_mem_info -force calc_lab10.mmi }
