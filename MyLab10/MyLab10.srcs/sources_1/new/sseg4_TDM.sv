@@ -20,7 +20,7 @@ module sseg4_TDM(input [15:0] data,
     bcd11 sseg4_bcd11(.B(data[10:0]), .Boutfinal(bcd11out));
     
     wire [15:0] mux2_1_out;
-    mux2 #(.N(16))sseg4_mux2_1(.in0(bcd11out), .in1(data[15:0]), .sel(hex_dec), .out(mux2_1_out));
+    mux2 #(.N(16))sseg4_mux2_1(.in0(data[15:0]), .in1(bcd11out), .sel(hex_dec), .out(mux2_1_out));
     
     wire [3:0] mux4_out;
     mux4 sseg4_mux4(.in0(mux2_1_out[3:0]), .in1(mux2_1_out[7:4]),.in2(mux2_1_out[11:8]), .in3(mux2_1_out[15:12]), .sel(digit_sel), .out(mux4_out));
