@@ -143,9 +143,10 @@ Below are the simulations with ERTs for 2 modules (register and an ALU) and pict
 
 \section*{Code}
 
-Code for source files for Register, ALU, and Top-Lab9 and for test bench files for Register and ALU is included below.
+Code for source files for Counter, 7-Seg Multiplexer, and Top-Level Calculator and the test bench files for the Counter and Multiplexer.
 
 \begin{lstlisting}[style=Verilog,caption=Counter Code,label=code:ex ]
+
 `timescale 1ns / 1ps
 //Megan Gordon, ELC 2137, 2020-04-09
 
@@ -181,140 +182,163 @@ assign count = Q_reg;
 assign tick = (Q_reg=={N{1'b1}}) ? 1'b1 : 1'b0;
 
 endmodule //counter
+
 \end{lstlisting}
 
-\begin{lstlisting}[style=Verilog,caption=ALU Module Code,label=code:ex ]
+\begin{lstlisting}[style=Verilog,caption=7-Seg Multiplexer Code,label=code:ex ]
+
 `timescale 1ns / 1ps
-//Megan Gordon, ELC 2137, 2020 -04 - 02
+//Megan Gordon, ELC 2137, 2020-04-09
 
-module alu #(parameter N=8)
-	(
-	output reg[N-1:0] out,
-	input [N-1:0] in0,
-	input [N-1:0] in1,
-	input [3:0] op
-	);
+module sseg4_TDM(input [15:0] data,
+input hex_dec,sign,
+output reg [6:0] seg,
+output reg dp,
+output reg [3:0] an,
+input rst, clk);
 
-	//parameters
-	parameter ADD=0;
-	parameter SUB=1;
-	parameter AND=2;
-	parameter OR=3;
-	parameter XOR=4;
+wire [1:0] digit_sel;
+wire tick1;
 
-	always @*
-	begin
-		case(op)
-			ADD: out = in0 + in1;
-			SUB: out = in0 - in1;
-			AND: out = in0 * in1;
-			OR: out = in0 | in1;
-			XOR: out = in0 ^ in1;
-			default: out = in0;
-		endcase
-	end 
+counter #(.N(18))timer(.clk(clk), .rst(rst), .en(1'd1), .tick(tick1));
+
+
+counter #(.N(2))counter2(.clk(tick1), .rst(rst), .en(1'd1), .count(digit_sel));
+
+wire [15:0] bcd11out;
+bcd11 sseg4_bcd11(.B(data[10:0]), .Boutfinal(bcd11out));
+
+wire [15:0] mux2_1_out;
+mux2 #(.N(16))sseg4_mux2_1(.in0(data[15:0]), .in1(bcd11out), .sel(hex_dec), .out(mux2_1_out));
+
+wire [3:0] mux4_out;
+mux4 sseg4_mux4(.in0(mux2_1_out[3:0]), .in1(mux2_1_out[7:4]),.in2(mux2_1_out[11:8]), .in3(mux2_1_out[15:12]), .sel(digit_sel), .out(mux4_out));
+
+wire [6:0]sseg_decoder_out;
+sseg_decoder sseg4_decode(.num(mux4_out), .sseg(sseg_decoder_out));
+
+wire [3:0] decoder_out;
+an_decode an_decode_sseg4(.in(digit_sel), .out(decoder_out));
+
+wire mux22_in; 
+assign mux22_in = ~decoder_out[3] & sign; 
+mux2 #(.N(7)) sseg4_mux2_2(.in0(sseg_decoder_out), .in1(7'b0111111), .sel(mux22_in), .out(seg));
+
+assign dp = 1;
+assign an = decoder_out;
 
 endmodule
+
 \end{lstlisting}
 
-\begin{lstlisting}[style=Verilog,caption=Top-Lab9 Module Code,label=code:ex ]
-`timescale 1ns / 1ps
-//Megan Gordon, ELC 2137, 2020 -04 - 02
+\begin{lstlisting}[style=Verilog,caption=Top-Level Calculator Code,label=code:ex ]
 
-module top_lab9(
+`timescale 1ns / 1ps
+//Megan Gordon, ELC 2137, 2020-04-09
+
+module calc_lab10(
 input btnU,
 input btnD,
-input [11:0]sw,
+input [15:0]sw,
 input clk,
 input btnC,
-output [15:0]led
-);
+output [15:0]led,
+output [6:0] seg,
+output dp,
+output [3:0] an);
 
-wire [7:0] Q1;
-wire [7:0] out;
-wire [7:0] Q2;   
-wire [7:0] sw1;
-wire [3:0] sw2;
+sseg4_TDM disp_unit(.data({8'b00000000, led[15:8]}), 
+.hex_dec(sw[15]), .sign(sw[14]), .clk(clk), .rst(btnC), 
+.seg(seg), .dp(dp), .an(an));
 
-assign sw1 = sw[7:0];
-assign sw2 = sw[11:8];
-
-
-register #(.N(8)) r1(.D(sw1), .clk(clk), 
-		.en(btnD), .rst(btnC), .Q(Q1));
-
-alu #(.N(8)) (.in0(sw1), .in1(Q1), 
-		.op(sw2), .out(out));
-
-register #(.N(8)) r2(.D(out), .clk(clk), 
-		.en(btnU), .rst(btnC), .Q(Q2));
-
-assign led [7:0] = Q1;
-assign led [15:8] = Q2;       
-
+top_lab9 calc_unit(.btnC(btnC), .btnD(btnD), .btnU(btnU), .clk(clk),
+.sw(sw), .led(led));
 
 endmodule
+
 \end{lstlisting}
 
-\begin{lstlisting}[style=Verilog,caption=Register Test Bench Code,label=code:ex ]
+\begin{lstlisting}[style=Verilog,caption=Counter Test Bench Code,label=code:ex ]
+
 `timescale 1ns / 1ps
-//Megan Gordon, ELC 2137, 2020 -04 - 02
+//Megan Gordon, ELC 2137, 2020-04-09
 
-module register_test();
+module counter_test();
 
-reg [3:0] D;
-reg clk, en, rst;
-wire [3:0] Q;
+reg clk;
+wire [3:0] count;
+wire clkA;
+wire clkB;
+wire clkC;
+reg en, rst;
 
-register #(.N(4)) r(.D(D), .clk(clk), 
-		.en(en), .rst(rst), .Q(Q));
+assign clkA = count[0];
+assign clkB = count[1];
+assign clkC = count[2];
 
-	always begin 
-		clk = ~clk; #5;
-	end //clock constantly runs
+counter #(.N(4)) r(.clk(clk), 
+.en(en), .rst(rst), .count(count));
 
-	initial begin
-		clk=0; en=0; rst=0; D=4'h0; #7;
-		rst=1; #3; //reset
-		D=4'hA; en=1; rst=0; #10
-		D=4'h3; #2;
-		en=0; #5;
-		en=1; #3;
-		D=4'h0; #2;
-		en=0; #10;
-		en=1; #2;
-		D=4'h6; #11;
-		$finish;
-	end
-              
+always begin 
+clk = ~clk; #5;
+end //clock constantly runs
+
+initial begin
+clk=0; rst=0; en=0; #5;
+rst=1; #5; //reset
+rst=0; en=1; #5;
+en=0; #5; en=1; #5
+en=0; #5; en=1; #5
+en=0; #5; en=1; #5
+en=0; #5; en=1; #5
+en=0; #5; en=1; #5
+en=0; #5; en=1; #5
+en=0; #5; en=1; #5
+en=0; #5; en=1; #5
+en=0; #5; en=1; #5
+en=0; #5;
+$finish;
+end
+
 endmodule
+
 \end{lstlisting}
 
-\begin{lstlisting}[style=Verilog,caption=ALU Test Bench Code,label=code:ex ]
+\begin{lstlisting}[style=Verilog,caption=7-Seg Multiplexer Test Bench Code,label=code:ex ]
+
 `timescale 1ns / 1ps
-//Megan Gordon, ELC 2137, 2020 -04 - 02
+//Megan Gordon, ELC 2137, 2020-04-09
 
-module alu_test();
+module sseg4_TDM_test();
 
-reg [7:0] in0;
-reg [7:0] in1;
-reg [3:0] op;
-wire [7:0] out;
 
-alu #(.N(8)) r(.in0(in0), .in1(in1), 
-		.op(op), .out(out));
+reg [15:0] data;
+reg hex_dec,sign;
+wire [6:0] seg;
+wire dp;
+wire [3:0] an;
+reg rst, clk;
 
-	initial begin
-		in0=3; in1=2; op=0; #10;
-		in0=3; in1=2; op=1; #10;
-		in0=3; in1=2; op=2; #10;
-		in0=3; in1=2; op=3; #10;
-		in0=3; in1=2; op=4; #10;
-		in0=3; in1=2; op=7; #10;
-		$finish;
-	end
+
+sseg4_TDM testTDM(.clk(clk), .rst(rst), .data(data), .seg(seg), .dp(dp), .an(an),
+.hex_dec(hex_dec), .sign(sign));
+
+always begin 
+clk = ~clk; #10;
+end //clock constantly runs
+
+initial begin
+clk=0; rst=1;
+hex_dec=0; sign=0;
+data=16'b0001011001110011;
+#2621440;
+rst=0; #26214400;
+hex_dec=1; #26214400;
+sign=1; 
+end
 
 endmodule
+
 \end{lstlisting}
 
 \end{document}
