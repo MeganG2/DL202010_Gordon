@@ -68,48 +68,54 @@
 
 \section*{Summary}
 
-This lab looks to expand on previous labs by expanding into larger systems with more modules. It allowed us to learn how to create an arithmetic logic unit (ALU) capable of a few operations using hexadecimal values. In completing this lab, the following skills were gained: ability to create and implement a D register with synchronous enable and asynchronous reset, ability to create and implement an arithmetic logic unit (ALU), ability to import and modify modules, and use them to design a modular system. 
+This lab looks to expand on previous labs by expanding into larger systems with more modules. It allowed us to learn how to create a 7-segment multiplexer utilizing counters. In completing this lab, the following skills were gained: ability to create and implement a D register with synchronous enable and asynchronous reset, ability to create and implement an arithmetic logic unit (ALU), ability to import and modify modules, and use them to design a modular system. 
 
 
 
 \section*{Results}
 
-Below are the simulations with ERTs for 2 modules (register and an ALU) and pictures of the board for each step in the operation list for on-board testing. 
+Below are the simulations with ERTs for 2 modules (counter and a 7-seg driver) and pictures of the board for each step in the operation list for on-board testing. 
 \medskip
 
 \begin{figure}[ht]\centering
 	\begin{tabular}{l|rrrrrrrrrrr}
 		Time (ns): & 0-5 & 5-10 & 10-15 & 15-20 & 20-25 & 25-30 & 30-35 & 35-40 & 40-45 & 45-50 & 50-55 \\
 		\midrule 
-		D (hex) & 0 & 0 & a & a & 3 & 3 & 0 & 0 & 0->6 & 6 & 6  \\
 		clk & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 \\
-		en & 0 & 0 & 1 & 1 & 1->0 & 0->1 & 1->0 & 0 & 0->1 & 1 & 1 \\
-		rst & 0 & 0->1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+		en & 0 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 \\
+		rst & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
 		\midrule
-		Q (hex) & X & X->0 & a & a & a & a & a & a & a & 6 & 6  \\
+		count & X & 0 & 0 & 1 & 1 & 2 & 2 & 3 & 3 & 4 & 4  \\
+		clkA & X & 0 & 0 & 1 & 1 & 0 & 0 & 1 & 1 & 0 & 0  \\
+		clkB & X & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 0 & 0  \\
+		clkC & X & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1  \\
 		\bottomrule
 	\end{tabular}\medskip
 
-	\includegraphics[width=1.15\textwidth, trim=5.6cm 12cm 0cm 3.5cm,clip]{register.png}
-	\caption{Register ERT and Testbench Results}
+	\includegraphics[width=1.15\textwidth, trim=7.5cm 14cm 0cm 4cm,clip]{counter.png}
+	\caption{Counter ERT and Testbench Results}
 	\label{fig:sim_with_table}
 \end{figure}
 
 
 \begin{figure}[ht]\centering
-	\begin{tabular}{l|rrrrrr}
-		Time (ns): & 0-10 & 10-20 & 20-30 & 30-40 & 40-50 & 50-60 \\
+	\begin{tabular}{l|rrrrrrrrrrrr}
+		Time (ms): & 0-5 & 5-10 & 10-15 & 15-20 & 20-25 & 25-30 & 30-35 & 35-40 & 40-45 & 45-50 & 50-55 & 55-60  \\
+		\midrule 
+		hexdec & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1  \\
+		sign & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1  \\
+		rst & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1  \\
 		\midrule
-		in0 & 3 & 3 & 3 & 3 & 3 & 3 \\
-		in1 & 2 & 2 & 2 & 2 & 2 & 2 \\
-		op & 0 & 1 & 2 & 3 & 4 & 7 \\
-		\midrule
-		out & 5 & 1 & 6 & 3 & 1 & 3 \\
+		an[3] & 1 & 1 & 1 & 1-0 & 0-1 & 1 & 1 & 1-0 & 0-1 & 1 & 1 & 1-0 \\
+		an[2] & 1 & 1 & 1-0 & 0-1 & 1 & 1 & 1-0 & 0-1 & 1 & 1 & 1-0 & 0-1\\
+		an[1] & 1 & 1-0 & 0-1 & 1 & 1 & 1-0 & 0-1 & 1 & 1 & 1-0 & 0-1 & 1\\
+		an[0] & 0 & 0-1 & 1 & 1 & 1-0 & 0-1 & 1 & 1 & 1-0 & 0-1 & 1 & 1  \\
+		seg (hex) & 30 & 78 & 02 & 79 & 30 & 12 & 02 & 79 & 79 & 12 & 02 & 3E \\
 		\bottomrule
 	\end{tabular}\medskip
 	
-	\includegraphics[width=1.15\textwidth, trim=5.8cm 12cm 0cm 4.0cm,clip]{alu.png}
-	\caption{ALU ERT and Testbench Results}
+	\includegraphics[width=1.15\textwidth, trim=2cm 5.5cm 2cm 4.0cm,clip]{ssegtest.png}
+	\caption{7-Seg Driver ERT when data is 1673 and Testbench Results}
 	\label{fig:sim_with_table}
 \end{figure}
 
@@ -117,33 +123,43 @@ Below are the simulations with ERTs for 2 modules (register and an ALU) and pict
 \clearpage
 
 \begin{figure}[ht]\centering
-	\includegraphics[angle=270, width=0.8\textwidth]{step1.jpg}
-	\caption{Operation 1-Displaying hexadecimal "14"}
+	\includegraphics[angle=0, width=1.0\textwidth]{IMG_6746.jpg}
+	\caption{Testing Step 1}
 	\label{fig:sim_with_table}
 \end{figure}
 \clearpage
 
 \begin{figure}[ht]\centering
-	\includegraphics[angle=270, width=0.8\textwidth]{step2.jpg}
-	\caption{Operation 2-Displaying hexdecimal "14" on LEDs 15-8 and 7-0}
+	\includegraphics[angle=0, width=1.0\textwidth]{IMG_6747.jpg}
+	\caption{Testing Step 2}
 	\label{fig:sim_with_table}
 \end{figure}
 \clearpage
 
 \begin{figure}[ht]\centering
-	\includegraphics[angle=270, width=0.8\textwidth]{step3.jpg}
-	\caption{Operation 3-Displaying sum of hexadecimal "14+7A"}
+	\includegraphics[angle=0, width=1.0\textwidth]{IMG_6748.jpg}
+	\caption{Testing Step 3}
 	\label{fig:sim_with_table}
 \end{figure}
 \clearpage
 
+\begin{figure}[ht]\centering
+	\includegraphics[angle=0, width=1.0\textwidth]{IMG_6749.jpg}
+	\caption{Testing Step 4}
+	\label{fig:sim_with_table}
+\end{figure}
+\clearpage
 
-
-
+\begin{figure}[ht]\centering
+	\includegraphics[angle=0, width=1.0\textwidth]{IMG_6750.jpg}
+	\caption{Testing Step 5}
+	\label{fig:sim_with_table}
+\end{figure}
+\clearpage
 
 \section*{Code}
 
-Code for source files for Counter, 7-Seg Multiplexer, and Top-Level Calculator and the test bench files for the Counter and Multiplexer.
+Code for source files for Counter, 7-Seg Driver, and Top-Level Calculator and the test bench files for the Counter and Driver.
 
 \begin{lstlisting}[style=Verilog,caption=Counter Code,label=code:ex ]
 
@@ -184,8 +200,9 @@ assign tick = (Q_reg=={N{1'b1}}) ? 1'b1 : 1'b0;
 endmodule //counter
 
 \end{lstlisting}
+\clearpage
 
-\begin{lstlisting}[style=Verilog,caption=7-Seg Multiplexer Code,label=code:ex ]
+\begin{lstlisting}[style=Verilog,caption=7-Seg Driver Code,label=code:ex ]
 
 `timescale 1ns / 1ps
 //Megan Gordon, ELC 2137, 2020-04-09
@@ -230,6 +247,7 @@ assign an = decoder_out;
 endmodule
 
 \end{lstlisting}
+\clearpage
 
 \begin{lstlisting}[style=Verilog,caption=Top-Level Calculator Code,label=code:ex ]
 
@@ -257,6 +275,7 @@ top_lab9 calc_unit(.btnC(btnC), .btnD(btnD), .btnU(btnU), .clk(clk),
 endmodule
 
 \end{lstlisting}
+\clearpage
 
 \begin{lstlisting}[style=Verilog,caption=Counter Test Bench Code,label=code:ex ]
 
@@ -303,8 +322,9 @@ end
 endmodule
 
 \end{lstlisting}
+\clearpage
 
-\begin{lstlisting}[style=Verilog,caption=7-Seg Multiplexer Test Bench Code,label=code:ex ]
+\begin{lstlisting}[style=Verilog,caption=7-Seg Driver Test Bench Code,label=code:ex ]
 
 `timescale 1ns / 1ps
 //Megan Gordon, ELC 2137, 2020-04-09
