@@ -3,18 +3,18 @@
 
 module sseg4_TDM(input [15:0] data,
             input hex_dec,sign,
-            output reg [7:0] seg,
+            output reg [6:0] seg,
             output reg dp,
             output reg [3:0] an,
-            input rst, clk, en);
+            input rst, clk);
             
     wire [1:0] digit_sel;
     wire tick1;
     
-    counter #(.N(18))timer(.clk(clk), .rst(rst), .en(en), .tick(tick1));
+    counter #(.N(18))timer(.clk(clk), .rst(rst), .en(1'd1), .tick(tick1));
     
     
-    counter #(.N(2))counter2(.clk(tick1), .rst(rst), .en(en), .count(digit_sel));
+    counter #(.N(2))counter2(.clk(tick1), .rst(rst), .en(1'd1), .count(digit_sel));
             
     wire [15:0] bcd11out;
     bcd11 sseg4_bcd11(.B(data[10:0]), .Boutfinal(bcd11out));

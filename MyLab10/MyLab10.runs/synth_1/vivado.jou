@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Apr 15 15:20:04 2020
-# Process ID: 10184
+# Start of session at: Thu Apr 16 14:35:34 2020
+# Process ID: 9768
 # Current directory: C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.runs/synth_1
 # Command line: vivado.exe -log calc_lab10.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source calc_lab10.tcl
 # Log file: C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.runs/synth_1/calc_lab10.vds

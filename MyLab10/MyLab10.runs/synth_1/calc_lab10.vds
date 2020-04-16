@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Apr 15 15:20:04 2020
-# Process ID: 10184
+# Start of session at: Thu Apr 16 14:35:34 2020
+# Process ID: 9768
 # Current directory: C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.runs/synth_1
 # Command line: vivado.exe -log calc_lab10.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source calc_lab10.tcl
 # Log file: C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.runs/synth_1/calc_lab10.vds
@@ -15,14 +15,14 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11096 
+INFO: Helper process launched with PID 2840 
 WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.srcs/sim_1/imports/imports/new/alu.sv:14]
 WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.srcs/sim_1/imports/imports/new/alu.sv:15]
 WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.srcs/sim_1/imports/imports/new/alu.sv:16]
 WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.srcs/sim_1/imports/imports/new/alu.sv:17]
 WARNING: [Synth 8-2507] parameter declaration becomes local in alu with formal parameter declaration list [C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.srcs/sim_1/imports/imports/new/alu.sv:18]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 354.570 ; gain = 106.066
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 355.559 ; gain = 110.816
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'calc_lab10' [C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.srcs/sim_1/new/calc_lab10.sv:4]
 INFO: [Synth 8-6157] synthesizing module 'sseg4_TDM' [C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.srcs/sources_1/new/sseg4_TDM.sv:4]
@@ -54,10 +54,7 @@ INFO: [Synth 8-6155] done synthesizing module 'an_decode' (7#1) [C:/Users/Gordon
 INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.srcs/sim_1/imports/imports/new/mux2.sv:3]
 	Parameter N bound to: 7 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (7#1) [C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.srcs/sim_1/imports/imports/new/mux2.sv:3]
-WARNING: [Synth 8-689] width (8) of port connection 'out' does not match port width (7) of module 'mux2__parameterized0' [C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.srcs/sources_1/new/sseg4_TDM.sv:36]
 INFO: [Synth 8-6155] done synthesizing module 'sseg4_TDM' (8#1) [C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.srcs/sources_1/new/sseg4_TDM.sv:4]
-WARNING: [Synth 8-689] width (7) of port connection 'seg' does not match port width (8) of module 'sseg4_TDM' [C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.srcs/sim_1/new/calc_lab10.sv:17]
-WARNING: [Synth 8-350] instance 'disp_unit' of module 'sseg4_TDM' requires 9 connections, but only 8 given [C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.srcs/sim_1/new/calc_lab10.sv:15]
 INFO: [Synth 8-6157] synthesizing module 'top_lab9' [C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.srcs/sim_1/imports/imports/new/top_lab9.sv:5]
 INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.srcs/sim_1/imports/imports/new/register.sv:6]
 	Parameter N bound to: 8 - type: integer 
@@ -76,7 +73,7 @@ INFO: [Synth 8-6155] done synthesizing module 'calc_lab10' (12#1) [C:/Users/Gord
 WARNING: [Synth 8-3331] design calc_lab10 has unconnected port sw[13]
 WARNING: [Synth 8-3331] design calc_lab10 has unconnected port sw[12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 387.773 ; gain = 139.270
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 388.973 ; gain = 144.230
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -85,15 +82,14 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin disp_unit:en to constant 0 [C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.srcs/sim_1/new/calc_lab10.sv:15]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 387.773 ; gain = 139.270
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 388.973 ; gain = 144.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 387.773 ; gain = 139.270
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 388.973 ; gain = 144.230
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -128,36 +124,36 @@ Parsing XDC File [C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/M
 Finished Parsing XDC File [C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.srcs/constrs_1/imports/GitHub/DL202010_Gordon/Lab09/lab09/lab09.srcs/constrs_1/imports/Downloads/switches.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.srcs/constrs_1/imports/GitHub/DL202010_Gordon/Lab09/lab09/lab09.srcs/constrs_1/imports/Downloads/switches.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/calc_lab10_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/calc_lab10_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 724.270 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 724.164 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 724.270 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 724.164 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 724.270 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 724.270 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 724.164 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 724.164 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 724.270 ; gain = 475.766
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 724.164 ; gain = 479.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 724.270 ; gain = 475.766
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 724.164 ; gain = 479.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 724.270 ; gain = 475.766
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 724.164 ; gain = 479.422
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "tick" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "tick" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.srcs/sim_1/imports/imports/new/alu.sv:22]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 724.270 ; gain = 475.766
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 724.164 ; gain = 479.422
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -260,26 +256,8 @@ INFO: [Synth 8-5546] ROM "disp_unit/timer/tick" won't be mapped to RAM because i
 WARNING: [Synth 8-3917] design calc_lab10 has port dp driven by constant 1
 WARNING: [Synth 8-3331] design calc_lab10 has unconnected port sw[13]
 WARNING: [Synth 8-3331] design calc_lab10 has unconnected port sw[12]
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\disp_unit/timer/Q_reg_reg[16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\disp_unit/timer/Q_reg_reg[17] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\disp_unit/timer/Q_reg_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\disp_unit/timer/Q_reg_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\disp_unit/timer/Q_reg_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\disp_unit/timer/Q_reg_reg[12] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\disp_unit/timer/Q_reg_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\disp_unit/timer/Q_reg_reg[10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\disp_unit/timer/Q_reg_reg[9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\disp_unit/timer/Q_reg_reg[8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\disp_unit/timer/Q_reg_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\disp_unit/timer/Q_reg_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\disp_unit/timer/Q_reg_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\disp_unit/timer/Q_reg_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\disp_unit/timer/Q_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\disp_unit/timer/Q_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\disp_unit/timer/Q_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\disp_unit/timer/Q_reg_reg[0] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 724.270 ; gain = 475.766
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 724.164 ; gain = 479.422
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -291,13 +269,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 724.270 ; gain = 475.766
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 724.473 ; gain = 479.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 742.535 ; gain = 494.031
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:54 . Memory (MB): peak = 746.344 ; gain = 501.602
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -309,7 +287,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 742.535 ; gain = 494.031
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:54 . Memory (MB): peak = 746.344 ; gain = 501.602
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -333,7 +311,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 742.535 ; gain = 494.031
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 746.344 ; gain = 501.602
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -346,7 +324,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 742.535 ; gain = 494.031
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 746.344 ; gain = 501.602
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -358,25 +336,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 742.535 ; gain = 494.031
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 746.344 ; gain = 501.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 742.535 ; gain = 494.031
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 746.344 ; gain = 501.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 742.535 ; gain = 494.031
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 746.344 ; gain = 501.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 742.535 ; gain = 494.031
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 746.344 ; gain = 501.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -393,50 +371,53 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |     8|
-|3     |LUT1   |     1|
-|4     |LUT2   |    13|
-|5     |LUT3   |    10|
+|2     |CARRY4 |    13|
+|3     |LUT1   |     3|
+|4     |LUT2   |    19|
+|5     |LUT3   |    14|
 |6     |LUT4   |     8|
-|7     |LUT5   |     7|
-|8     |LUT6   |    41|
-|9     |FDCE   |    16|
-|10    |IBUF   |    17|
+|7     |LUT5   |    16|
+|8     |LUT6   |    49|
+|9     |FDCE   |    36|
+|10    |IBUF   |    18|
 |11    |OBUF   |    28|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+-------------------+-----------+------+
-|      |Instance           |Module     |Cells |
-+------+-------------------+-----------+------+
-|1     |top                |           |   150|
-|2     |  calc_unit        |top_lab9   |   104|
-|3     |    nolabel_line27 |alu        |    23|
-|4     |    r1             |register   |    57|
-|5     |    r2             |register_0 |    24|
-+------+-------------------+-----------+------+
++------+-------------------+------------------------+------+
+|      |Instance           |Module                  |Cells |
++------+-------------------+------------------------+------+
+|1     |top                |                        |   205|
+|2     |  calc_unit        |top_lab9                |   119|
+|3     |    nolabel_line27 |alu                     |    23|
+|4     |    r1             |register                |    57|
+|5     |    r2             |register_0              |    39|
+|6     |  disp_unit        |sseg4_TDM               |    39|
+|7     |    counter2       |counter__parameterized0 |    11|
+|8     |    timer          |counter                 |    28|
++------+-------------------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 742.535 ; gain = 494.031
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 746.344 ; gain = 501.602
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 742.535 ; gain = 157.535
-Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 742.535 ; gain = 494.031
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:43 . Memory (MB): peak = 746.344 ; gain = 166.410
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:58 . Memory (MB): peak = 746.344 ; gain = 501.602
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 742.535 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 747.297 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-68 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+50 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 742.535 ; gain = 494.031
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 742.535 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:01:03 . Memory (MB): peak = 747.297 ; gain = 502.555
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 747.297 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/MyLab10/MyLab10.runs/synth_1/calc_lab10.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file calc_lab10_utilization_synth.rpt -pb calc_lab10_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 15 15:21:08 2020...
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 16 14:36:57 2020...

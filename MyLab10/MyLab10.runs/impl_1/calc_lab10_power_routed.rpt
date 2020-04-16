@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Wed Apr 15 15:23:31 2020
+| Date             : Thu Apr 16 14:39:30 2020
 | Host             : Gordoncrew-PC running 64-bit major release  (build 9200)
 | Command          : report_power -file calc_lab10_power_routed.rpt -pb calc_lab10_power_summary_routed.pb -rpx calc_lab10_power_routed.rpx
 | Design           : calc_lab10
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.105        |
+| Total On-Chip Power (W)  | 0.122        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.033        |
+| Dynamic (W)              | 0.051        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 84.5         |
-| Junction Temperature (C) | 25.5         |
+| Max Ambient (C)          | 84.4         |
+| Junction Temperature (C) | 25.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      114 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       72 |     20800 |            0.35 |
-|   CARRY4       |    <0.001 |        8 |      8150 |            0.10 |
-|   Register     |    <0.001 |       24 |     41600 |            0.06 |
-|   Others       |     0.000 |        3 |       --- |             --- |
-| Signals        |     0.001 |      120 |       --- |             --- |
-| I/O            |     0.031 |       45 |       106 |           42.45 |
+| Slice Logic    |    <0.001 |      170 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       94 |     20800 |            0.45 |
+|   CARRY4       |    <0.001 |       13 |      8150 |            0.16 |
+|   Register     |    <0.001 |       44 |     41600 |            0.11 |
+|   Others       |     0.000 |        5 |       --- |             --- |
+| Signals        |     0.002 |      171 |       --- |             --- |
+| I/O            |     0.047 |       46 |       106 |           43.40 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.105 |          |           |                 |
+| Total          |     0.122 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.012 |       0.003 |      0.010 |
-| Vccaux    |       1.800 |     0.014 |       0.001 |      0.013 |
-| Vcco33    |       3.300 |     0.010 |       0.009 |      0.001 |
+| Vccint    |       1.000 |     0.013 |       0.003 |      0.010 |
+| Vccaux    |       1.800 |     0.014 |       0.002 |      0.013 |
+| Vcco33    |       3.300 |     0.014 |       0.013 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -140,9 +140,9 @@ Table of Contents
 +-------------+-----------+
 | Name        | Power (W) |
 +-------------+-----------+
-| calc_lab10  |     0.033 |
+| calc_lab10  |     0.051 |
 |   calc_unit |     0.002 |
-|     r2      |     0.001 |
+|     r2      |     0.002 |
 +-------------+-----------+
 
 
