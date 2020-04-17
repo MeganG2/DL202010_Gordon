@@ -1,5 +1,5 @@
-% Digital Logic Lab 9 ALU with Input Register
-% Created: 2020-04-02, Megan Gordon
+% Digital Logic Lab 10 7-Segment Display with Time-Division Multiplexing
+% Created: 2020-04-16, Megan Gordon
 
 %==========================================================
 %=========== Document Setup  ==============================
@@ -68,14 +68,30 @@
 
 \section*{Summary}
 
-This lab looks to expand on previous labs by expanding into larger systems with more modules. It allowed us to learn how to create a 7-segment multiplexer utilizing counters. In completing this lab, the following skills were gained: ability to create and implement a D register with synchronous enable and asynchronous reset, ability to create and implement an arithmetic logic unit (ALU), ability to import and modify modules, and use them to design a modular system. 
+This lab looks to expand on previous labs by expanding into larger systems with more modules. It allowed us to learn how to create a 7-segment multiplexer utilizing counters. In completing this lab, the following skills were gained: ability to recognize synchronous design methodology for regular sequential circuits, the ability to develop a parameterized counter-timer module, the ability to implement a clock-driven, 4-digit display using multiple instances of a counter module. 
 
 
 
 \section*{Results}
 
-Below are the simulations with ERTs for 2 modules (counter and a 7-seg driver) and pictures of the board for each step in the operation list for on-board testing. 
+\textbf{Deliverable Questions:}
+
 \medskip
+\textbf{a)} The three main groups of the RTL definition of sequential logic are the set of registers in the system, the operations performed on the data stored in the registers, and the control that supervises the sequence of operations in the system.
+
+\textbf{b)} Here is an annotated figure to distinguish components in this example our register is a counter:
+\begin{figure}[ht]\centering
+	\includegraphics[angle=0, width=0.5\textwidth]{IMG_6712.jpg}
+\end{figure}
+
+\textbf{c)} Using a shift register (low to high) instead of a counter would result in line $Q-next<=(LSB-in, Q-next[N-2:0])$
+
+\clearpage
+
+\textbf{Below are the simulations with ERTs for 2 modules (counter and a 7-seg driver) and pictures of the board for each step in the operation list for on-board testing.} 
+\bigskip
+\bigskip
+\bigskip
 
 \begin{figure}[ht]\centering
 	\begin{tabular}{l|rrrrrrrrrrr}
