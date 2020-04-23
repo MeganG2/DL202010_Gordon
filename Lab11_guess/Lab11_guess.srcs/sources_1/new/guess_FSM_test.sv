@@ -10,7 +10,7 @@ module guess_FSM_test();
     wire win, lose;
     integer i;
     
-    guess_FSM #(.N(2))guess1(.clk(clk), .reset(reset), .b(b), .y(y), .win(win), .lose(lose));
+    guess_FSM #(.N(21))guess1(.clk(clk), .reset(reset), .b(b), .y(y), .win(win), .lose(lose));
         
     always begin
         #5 clk = ~clk;
