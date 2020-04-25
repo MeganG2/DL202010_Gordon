@@ -89,8 +89,8 @@ module guess_FSM #(parameter N=21)
          swin: begin
          // counter_next = counter - 1;
            // if (counter == 0)
-              win=1'd1;
-              lose=1'd0;
+              win=1;
+              lose=0;
               if (b[3]+b[2]+b[1]+b[0])
               state_next = swin;
               else if (~b[3]&~b[2]&~b[1]&~b[0])
@@ -100,8 +100,8 @@ module guess_FSM #(parameter N=21)
           slose: begin
             //counter_next = counter - 1;
             //if (counter == 0)
-              lose=1'd1;
-              win=1'd0;
+              lose=1;
+              win=0;
               if (b[3]+b[2]+b[1]+b[0])
               state_next = slose;
               else if (~b[3]&~b[2]&~b[1]&~b[0])
