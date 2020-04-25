@@ -24,9 +24,7 @@ module guess_FSM_test();
         b=4'b0001; #20
         b=4'b0010; #20
         b=4'b0000; #20
-        b=4'b1000; #20
-        b=4'b1100; #20
-  
+        b=4'b1000; #20 
         
         // bounce
        // for (i=0; i<10; i=i+1) begin

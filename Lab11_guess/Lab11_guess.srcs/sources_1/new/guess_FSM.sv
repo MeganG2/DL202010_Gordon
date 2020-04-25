@@ -10,17 +10,18 @@ module guess_FSM #(parameter N=21)
     output reg lose);
     
    // define states as local parameters (constants)
-   localparam [1:0]
-      s0  = 2'b00,
-      s1  = 2'b01,
-      s2  = 2'b11,
-      s3  = 2'b10;
+   localparam [2:0]
+      s0  = 3'b000,
+      s1  = 3'b001,
+      s2  = 3'b010,
+      s3  = 3'b011,
+      swin = 3'b100,
+      slose = 3'b101;
       
    // internal signals
    reg [1:0] state, state_next;
   // reg [N-1:0] counter, counter_next;
-   reg [1:0] swin;
-   reg [1:0] slose;
+
    
    
    // state memory (register)
