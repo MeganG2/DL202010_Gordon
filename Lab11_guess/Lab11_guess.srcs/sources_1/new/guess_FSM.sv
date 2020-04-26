@@ -39,12 +39,13 @@ module guess_FSM #(parameter N=21)
    always_comb begin
       // default behavior
       state_next   = state;
+      win=0;
+            lose=0;
      // counter_next = counter;
       
       case(state)
          s0: begin
-            win=0;
-            lose=0;
+            
             y = 4'b0001;
             if (~b[0])
                state_next = s1;
