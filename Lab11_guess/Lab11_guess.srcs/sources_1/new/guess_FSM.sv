@@ -50,7 +50,7 @@ module guess_FSM #(parameter N=21)
                state_next = s1;
             else if (~b[3]&~b[2]&~b[1]&b[0])
                     state_next = swin;
-                if (b[3]+b[2]+b[1])
+                if (b[3]|b[2]|b[1])
                     state_next = slose;
          end
          
@@ -60,7 +60,7 @@ module guess_FSM #(parameter N=21)
                 state_next = s2;
             else if (~b[3]&~b[2]&b[1]&~b[0])
                     state_next = swin;
-                if (b[3]+b[2]+b[0])
+                if (b[3]|b[2]|b[0])
                     state_next = slose;
          end
          
@@ -70,7 +70,7 @@ module guess_FSM #(parameter N=21)
                 state_next = s3;
             else if (~b[3]&b[2]&~b[1]&~b[0])
                     state_next = swin;
-                if (b[3]+b[1]+b[0])
+                if (b[3]|b[1]|b[0])
                     state_next = slose;
          end
          
@@ -80,18 +80,16 @@ module guess_FSM #(parameter N=21)
                 state_next = s1;
             else if (b[3]&~b[2]&~b[1]&~b[0])
                     state_next = swin;
-                 if (b[2]+b[1]+b[0])
+                 if (b[2]|b[1]|b[0])
                      state_next = slose;
-         end
-           
-         
+         end   
             
          swin: begin
          // counter_next = counter - 1;
            // if (counter == 0)
               win=1;
               lose=0;
-              if (b[3]+b[2]+b[1]+b[0])
+              if (b[3]|b[2]|b[1]|b[0])
               state_next = swin;
               else if (~b[3]&~b[2]&~b[1]&~b[0])
                  state_next = s0;
@@ -102,7 +100,7 @@ module guess_FSM #(parameter N=21)
             //if (counter == 0)
               lose=1;
               win=0;
-              if (b[3]+b[2]+b[1]+b[0])
+              if (b[3]|b[2]|b[1]|b[0])
               state_next = slose;
               else if (~b[3]&~b[2]&~b[1]&~b[0])
                 state_next = s0;
