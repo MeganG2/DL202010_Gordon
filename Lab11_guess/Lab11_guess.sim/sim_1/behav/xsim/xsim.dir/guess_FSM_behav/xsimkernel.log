@@ -2,3 +2,6 @@ Running: xsim.dir/guess_FSM_behav/xsimk.exe -simmode gui -wdb guess_FSM_behav.wd
 Design successfully loaded
 Design Loading Memory Usage: 5652 KB (Peak: 5652 KB)
 Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 6272 KB (Peak: 6272 KB)
+Simulation CPU Usage: 3015 ms
