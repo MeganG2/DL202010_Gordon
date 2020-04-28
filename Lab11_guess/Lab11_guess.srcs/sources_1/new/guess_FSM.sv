@@ -20,32 +20,26 @@ module guess_FSM #(parameter N=21)
       
    // internal signals
    reg [1:0] state, state_next;
-  // reg [N-1:0] counter, counter_next;
-
    
    
    // state memory (register)
    always_ff @(posedge clk or posedge reset)
       if (reset) begin
          state   <= s0;
-        // counter <= {N{1'b1}};
       end
       else begin
          state   <= state_next;
-        // counter <= counter_next;
       end
       
    // combined next-state and output logic
    always_comb begin
       // default behavior
       state_next   = state;
-      win=0;
-            lose=0;
-     // counter_next = counter;
       
       case(state)
          s0: begin
-            
+            win=0;
+            lose=0;
             y = 4'b0001;
             if (~b[0])
                state_next = s1;
@@ -86,8 +80,6 @@ module guess_FSM #(parameter N=21)
          end   
             
          swin: begin
-         // counter_next = counter - 1;
-           // if (counter == 0)
               win=1;
               lose=0;
               if (b[3]|b[2]|b[1]|b[0])
@@ -97,8 +89,6 @@ module guess_FSM #(parameter N=21)
             end   
             
           slose: begin
-            //counter_next = counter - 1;
-            //if (counter == 0)
               lose=1;
               win=0;
               if (b[3]|b[2]|b[1]|b[0])
