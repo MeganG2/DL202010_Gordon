@@ -7,7 +7,6 @@ module guessing_game(
     input clk,
     input [15:0] sw, 
     input btnC,
-    input [3:0] y,
     output [3:0] seg,
     output [3:0] an,
     output [15:0] led);
@@ -45,6 +44,7 @@ module guessing_game(
     assign tickL = b[0];
     
     wire win, lose;
+    wire [3:0] y;
     guess_FSM #(.N(21)) guess (.clk(count1), .reset(btnC), .b(b), .y(y), .win(win), .lose(lose));
     
 endmodule
