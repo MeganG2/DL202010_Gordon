@@ -4,8 +4,8 @@
 
 module guess_FSM #(parameter N=21)
    (input clk, reset,
-    input reg [3:0] y,
     input [3:0] b,
+    output reg [3:0] y,
     output reg win,
     output reg lose);
     
@@ -42,10 +42,10 @@ module guess_FSM #(parameter N=21)
             lose=0;
             y = 4'b0001;
             if (~b[0])
-               state_next = s1;
+                state_next = s1;
             else if (~b[3]&~b[2]&~b[1]&b[0])
                     state_next = swin;
-                if (b[3]|b[2]|b[1])
+               else if (b[3]|b[2]|b[1])
                     state_next = slose;
          end
          
@@ -55,7 +55,7 @@ module guess_FSM #(parameter N=21)
                 state_next = s2;
             else if (~b[3]&~b[2]&b[1]&~b[0])
                     state_next = swin;
-                if (b[3]|b[2]|b[0])
+               else if (b[3]|b[2]|b[0])
                     state_next = slose;
          end
          
@@ -65,23 +65,23 @@ module guess_FSM #(parameter N=21)
                 state_next = s3;
             else if (~b[3]&b[2]&~b[1]&~b[0])
                     state_next = swin;
-                if (b[3]|b[1]|b[0])
+              else if (b[3]|b[1]|b[0])
                     state_next = slose;
          end
          
          s3: begin
             y = 4'b1000;
             if (~b[3])
-                state_next = s1;
+                state_next = s0;
             else if (b[3]&~b[2]&~b[1]&~b[0])
                     state_next = swin;
-                 if (b[2]|b[1]|b[0])
+                else if (b[2]|b[1]|b[0])
                      state_next = slose;
          end   
             
          swin: begin
-              win=1;
-              lose=0;
+             assign win=1;
+             assign lose=0;
               if (b[3]|b[2]|b[1]|b[0])
               state_next = swin;
               else if (~b[3]&~b[2]&~b[1]&~b[0])
@@ -89,8 +89,8 @@ module guess_FSM #(parameter N=21)
             end   
             
           slose: begin
-              lose=1;
-              win=0;
+             assign lose=1;
+             assign win=0;
               if (b[3]|b[2]|b[1]|b[0])
               state_next = slose;
               else if (~b[3]&~b[2]&~b[1]&~b[0])
