@@ -47,4 +47,6 @@ module guessing_game(
     wire [3:0] y;
     guess_FSM #(.N(21)) guess (.clk(count1), .reset(btnC), .b(b), .y(y), .win(win), .lose(lose));
     
+    //sseg4? How do I connect win/lose/y to get seg/an/led and connect to board???
+    
 endmodule
