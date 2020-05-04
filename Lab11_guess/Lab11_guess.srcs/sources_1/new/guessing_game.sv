@@ -38,15 +38,21 @@ module guessing_game(
         
     //button debounce outputs to b input    
     wire [3:0] b;    
-    assign tickU = b[3];
-    assign tickD = b[2];
-    assign tickR = b[1];
-    assign tickL = b[0];
+    assign outU = b[3];
+    assign outD = b[2];
+    assign outR = b[1];
+    assign outL = b[0];
     
     wire win, lose;
     wire [3:0] y;
     guess_FSM #(.N(21)) guess (.clk(count1), .reset(btnC), .b(b), .y(y), .win(win), .lose(lose));
     
     //sseg4? How do I connect win/lose/y to get seg/an/led and connect to board???
+    
+    assign an[1] = ~sw[15];
+    assign an[0] = sw[15];
+    assign an[3:2] = 3;
+    
+    mux2_4b  mux1(.in0(sw [3:0]) , .in1(sw [7:4]) , .sel(sw[15]) ,.out(out));
     
 endmodule
