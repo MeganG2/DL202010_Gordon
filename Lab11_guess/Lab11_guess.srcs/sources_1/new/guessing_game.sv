@@ -40,8 +40,8 @@ module guessing_game(
     //button debounce outputs to b input    
     wire [3:0] b;    
     assign outU = b[3];
-    assign outD = b[2];
-    assign outR = b[1];
+    assign outR = b[2];
+    assign outD = b[1];
     assign outL = b[0];
     
     mux2_4b  mux1(.in0(clk) , .in1(count1) , .sel(sw[15]) ,.out(clock));
