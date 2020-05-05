@@ -9,11 +9,12 @@ module guessing_game(
     input btnC,
     output [3:0] seg,
     output [3:0] an,
-    output [15:0] led);
+    output [15:0] led,
+    output clock);
     
     //counter
     wire [1:0] count1;
-    counter #(.N(18))(.clk(clk), .rst(btnC), .en(sw[0]), .count(count1));
+    counter #(.N(2))(.clk(clk), .rst(btnC), .en(sw[0]), .count(count1));
     
     //buttons U, D, R, and L debouced
     wire tickU;
@@ -43,16 +44,18 @@ module guessing_game(
     assign outR = b[1];
     assign outL = b[0];
     
+    mux2_4b  mux1(.in0(clk) , .in1(count1) , .sel(sw[15]) ,.out(clock));
+    
     wire win, lose;
     wire [3:0] y;
-    guess_FSM #(.N(21)) guess (.clk(count1), .reset(btnC), .b(b), .y(y), .win(win), .lose(lose));
+    guess_FSM #(.N(21)) guess (.clk(clock), .reset(btnC), .b(b), .y(y), .win(win), .lose(lose));
     
-    //sseg4? How do I connect win/lose/y to get seg/an/led and connect to board???
     
-    assign an[1] = ~sw[15];
-    assign an[0] = sw[15];
-    assign an[3:2] = 3;
     
-    mux2_4b  mux1(.in0(sw [3:0]) , .in1(sw [7:4]) , .sel(sw[15]) ,.out(out));
+    //assign an[1] = ~sw[15];
+    //assign an[0] = sw[15];
+    //assign an[3:2] = 3;
+    
+   
     
 endmodule

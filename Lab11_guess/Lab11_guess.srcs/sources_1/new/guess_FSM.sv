@@ -19,7 +19,7 @@ module guess_FSM #(parameter N=21)
       slose = 3'b101;
       
    // internal signals
-   reg [1:0] state, state_next;
+   reg [2:0] state, state_next;
    
    
    // state memory (register)
@@ -38,8 +38,8 @@ module guess_FSM #(parameter N=21)
       
       case(state)
          s0: begin
-            win=0;
-            lose=0;
+            assign win=0;
+            assign lose=0;
             y = 4'b0001;
             if (~b[0])
                 state_next = s1;
