@@ -7,7 +7,7 @@ module guessing_game(
     input clk,
     input [15:0] sw, 
     input btnC,
-    output [3:0] seg,
+    output [6:0] seg,
     output [3:0] an,
     output [15:0] led,
     output clock);
@@ -55,7 +55,19 @@ module guessing_game(
     //assign an[1] = ~sw[15];
     //assign an[0] = sw[15];
     //assign an[3:2] = 3;
-    
-   
+    always @*
+    begin
+    if (y=4'b0001)
+        seg = 7'b1111110; //top
+        
+    else if (y=4'b0010)
+        seg = 7'b1111001; //right
+        
+    else if (y = 4'b0100) 
+        seg = 7'b1110111; //bottom
+        
+    else if (y=4'b100)
+        seg = 7'b1001111; //left
+    end 
     
 endmodule
