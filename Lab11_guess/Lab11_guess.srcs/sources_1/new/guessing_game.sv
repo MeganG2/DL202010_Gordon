@@ -53,8 +53,9 @@ module guessing_game(
     
     
     //assign an[1] = ~sw[15];
-    //assign an[0] = sw[15];
-    //assign an[3:2] = 3;
+    assign an[0] = 1;
+    assign an[3:1] = 0;
+    
     always @*
     begin
     if (y=4'b0001)
@@ -70,4 +71,10 @@ module guessing_game(
         seg = 7'b1001111; //left
     end 
     
+    begin
+    if (win)
+        led=16'b1111111111111111;
+    else if (lose)
+        led=16'b0000001110000000;
+        end
 endmodule
