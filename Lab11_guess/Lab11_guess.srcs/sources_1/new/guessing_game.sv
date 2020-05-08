@@ -3,18 +3,17 @@
 //ELC 2137  4-22-2020
 
 module guessing_game(
-    input btnU, btnD, btnR, btnL, 
+    input btnU, btnD, btnR, btnL,
     input clk,
     input [15:0] sw, 
     input btnC,
     output reg [6:0] seg,
     output [3:0] an,
-    output reg [15:0] led,
-    output clock);
+    output reg [15:0] led);
     
     //counter
     wire [1:0] count1;
-    counter #(.N(2))(.clk(clk), .rst(btnC), .en(sw[0]), .count(count1));
+    counter #(.N(2))counter1(.clk(clk), .rst(btnC), .en(sw[0]), .count(count1));
     
     //buttons U, D, R, and L debouced
     wire tickU;
@@ -44,6 +43,7 @@ module guessing_game(
     assign outD = b[1]; //down button is b[1]
     assign outL = b[0]; //left button is b[0]
     
+    wire clock;
     mux2_4b  mux1(.in0(clk) , .in1(count1) , .sel(sw[15]) ,.out(clock));
     
     wire win, lose;

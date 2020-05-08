@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -67,6 +68,9 @@ set_property used_in_implementation false [get_files C:/Users/Gordoncrew/Documen
 
 read_xdc C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab11_guess/Lab11_guess.srcs/constrs_1/imports/Downloads/btnR.xdc
 set_property used_in_implementation false [get_files C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab11_guess/Lab11_guess.srcs/constrs_1/imports/Downloads/btnR.xdc]
+
+read_xdc C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab11_guess/Lab11_guess.srcs/constrs_1/imports/Downloads/sseg.xdc
+set_property used_in_implementation false [get_files C:/Users/Gordoncrew/Documents/GitHub/DL202010_Gordon/Lab11_guess/Lab11_guess.srcs/constrs_1/imports/Downloads/sseg.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

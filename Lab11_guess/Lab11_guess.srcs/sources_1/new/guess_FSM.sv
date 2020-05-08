@@ -21,7 +21,6 @@ module guess_FSM #(parameter N=21)
    // internal signals
    reg [2:0] state, state_next;
    
-   
    // state memory (register)
    always_ff @(posedge clk or posedge reset)
       if (reset) begin
@@ -78,7 +77,7 @@ module guess_FSM #(parameter N=21)
                 else if (b[2]|b[1]|b[0])
                      state_next = slose;
          end   
-            
+                
          swin: begin
              win=1;
              lose=0;
@@ -86,16 +85,17 @@ module guess_FSM #(parameter N=21)
               state_next = swin;
               else if (~b[3]&~b[2]&~b[1]&~b[0])
                  state_next = s0;
-            end   
+            end
             
-          slose: begin
+         slose: begin
              lose=1;
              win=0;
               if (b[3]|b[2]|b[1]|b[0])
               state_next = slose;
               else if (~b[3]&~b[2]&~b[1]&~b[0])
                 state_next = s0;
-            end
+            end    
+            
       endcase
    end
    
