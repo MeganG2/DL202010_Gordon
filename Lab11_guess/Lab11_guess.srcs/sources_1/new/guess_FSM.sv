@@ -38,8 +38,8 @@ module guess_FSM #(parameter N=21)
       
       case(state)
          s0: begin
-            assign win=0;
-            assign lose=0;
+            win=0;
+            lose=0;
             y = 4'b0001;
             if (~b[0])
                 state_next = s1;
@@ -80,8 +80,8 @@ module guess_FSM #(parameter N=21)
          end   
             
          swin: begin
-             assign win=1;
-             assign lose=0;
+             win=1;
+             lose=0;
               if (b[3]|b[2]|b[1]|b[0])
               state_next = swin;
               else if (~b[3]&~b[2]&~b[1]&~b[0])
@@ -89,8 +89,8 @@ module guess_FSM #(parameter N=21)
             end   
             
           slose: begin
-             assign lose=1;
-             assign win=0;
+             lose=1;
+             win=0;
               if (b[3]|b[2]|b[1]|b[0])
               state_next = slose;
               else if (~b[3]&~b[2]&~b[1]&~b[0])

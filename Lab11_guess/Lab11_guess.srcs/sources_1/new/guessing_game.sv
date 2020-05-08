@@ -7,9 +7,9 @@ module guessing_game(
     input clk,
     input [15:0] sw, 
     input btnC,
-    output [6:0] seg,
+    output reg [6:0] seg,
     output [3:0] an,
-    output [15:0] led,
+    output reg [15:0] led,
     output clock);
     
     //counter
@@ -39,10 +39,10 @@ module guessing_game(
         
     //button debounce outputs to b input    
     wire [3:0] b;    
-    assign outU = b[3];
-    assign outR = b[2];
-    assign outD = b[1];
-    assign outL = b[0];
+    assign outU = b[3]; //up button is b[3]
+    assign outR = b[2]; //right button is b[2]
+    assign outD = b[1]; //down button is b[1]
+    assign outL = b[0]; //left button is b[0]
     
     mux2_4b  mux1(.in0(clk) , .in1(count1) , .sel(sw[15]) ,.out(clock));
     
@@ -51,22 +51,17 @@ module guessing_game(
     guess_FSM #(.N(21)) guess (.clk(clock), .reset(btnC), .b(b), .y(y), .win(win), .lose(lose));
     
     
-    
-    //assign an[1] = ~sw[15];
-    assign an[0] = 0;
+    assign an[0] = 0; //only one digit needed 
     assign an[3:1] = 3'b111;
     
     always @*
     begin
-    if (y==4'b0001)
+    if (y==4'b0001) 
         seg = 7'b1111110; //top
-        
-    else if (y==4'b0010)
+    else if (y==4'b0010) 
         seg = 7'b1111001; //right
-        
     else if (y == 4'b0100) 
         seg = 7'b1110111; //bottom
-        
     else if (y==4'b100)
         seg = 7'b1001111; //left
     end 
